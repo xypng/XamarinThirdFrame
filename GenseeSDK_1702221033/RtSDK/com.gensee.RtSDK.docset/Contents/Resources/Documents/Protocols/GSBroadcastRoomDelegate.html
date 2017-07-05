@@ -1,0 +1,2107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>GSBroadcastRoomDelegate Protocol Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">RtSDK </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Gensee</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/broadcastManager:broadcastMessage:">- broadcastManager:broadcastMessage:</option>
+		
+		<option value="//api/name/broadcastManager:checkinRequestCountingDownFrom:">- broadcastManager:checkinRequestCountingDownFrom:</option>
+		
+		<option value="//api/name/broadcastManager:checkinRequestResponsedUser:">- broadcastManager:checkinRequestResponsedUser:</option>
+		
+		<option value="//api/name/broadcastManager:didLoseOtherUser:">- broadcastManager:didLoseOtherUser:</option>
+		
+		<option value="//api/name/broadcastManager:didReceiveBroadcastConnectResult:">- broadcastManager:didReceiveBroadcastConnectResult:</option>
+		
+		<option value="//api/name/broadcastManager:didReceiveBroadcastInfoKey:value:">- broadcastManager:didReceiveBroadcastInfoKey:value:</option>
+		
+		<option value="//api/name/broadcastManager:didReceiveBroadcastJoinResult:selfUserID:rootSeverRebooted:">- broadcastManager:didReceiveBroadcastJoinResult:selfUserID:rootSeverRebooted:</option>
+		
+		<option value="//api/name/broadcastManager:didReceiveOtherUser:">- broadcastManager:didReceiveOtherUser:</option>
+		
+		<option value="//api/name/broadcastManager:didSelfLeaveBroadcastFor:">- broadcastManager:didSelfLeaveBroadcastFor:</option>
+		
+		<option value="//api/name/broadcastManager:didSetLocked:">- broadcastManager:didSetLocked:</option>
+		
+		<option value="//api/name/broadcastManager:didSetRecordingStatus:">- broadcastManager:didSetRecordingStatus:</option>
+		
+		<option value="//api/name/broadcastManager:didSetStatus:">- broadcastManager:didSetStatus:</option>
+		
+		<option value="//api/name/broadcastManager:didSetupCustomBitRate:">- broadcastManager:didSetupCustomBitRate:</option>
+		
+		<option value="//api/name/broadcastManager:didUpdateUserInfo:updateFlag:">- broadcastManager:didUpdateUserInfo:updateFlag:</option>
+		
+		<option value="//api/name/broadcastManager:handDownUser:">- broadcastManager:handDownUser:</option>
+		
+		<option value="//api/name/broadcastManager:handUpUser:extraData:">- broadcastManager:handUpUser:extraData:</option>
+		
+		<option value="//api/name/broadcastManager:lotteryActionType:userNames:">- broadcastManager:lotteryActionType:userNames:</option>
+		
+		<option value="//api/name/broadcastManager:networkStatus:">- broadcastManager:networkStatus:</option>
+		
+		<option value="//api/name/broadcastManager:phoneNumber:reason:status:">- broadcastManager:phoneNumber:reason:status:</option>
+		
+		<option value="//api/name/broadcastManager:phoneServiceStatus:">- broadcastManager:phoneServiceStatus:</option>
+		
+		<option value="//api/name/broadcastManager:querySettingsInfoKey:numberValue:">- broadcastManager:querySettingsInfoKey:numberValue:</option>
+		
+		<option value="//api/name/broadcastManager:querySettingsInfoKey:strValue:">- broadcastManager:querySettingsInfoKey:strValue:</option>
+		
+		<option value="//api/name/broadcastManager:saveSettingsInfoKey:numberValue:">- broadcastManager:saveSettingsInfoKey:numberValue:</option>
+		
+		<option value="//api/name/broadcastManager:saveSettingsInfoKey:strValue:">- broadcastManager:saveSettingsInfoKey:strValue:</option>
+		
+		<option value="//api/name/broadcastManager:upgradedAppDownLoadUrl:">- broadcastManager:upgradedAppDownLoadUrl:</option>
+		
+		<option value="//api/name/broadcastManagerWillStartReconnect:">- broadcastManagerWillStartReconnect:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">GSBroadcastRoomDelegate Protocol Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Conforms to</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>GSBroadcastRoomDelegate.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>直播代理，回调直播信息数据</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/broadcastManager:didReceiveBroadcastConnectResult:" title="broadcastManager:didReceiveBroadcastConnectResult:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/broadcastManager:didReceiveBroadcastConnectResult:">&ndash;&nbsp;broadcastManager:didReceiveBroadcastConnectResult:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>直播连接代理</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)broadcastManager:(GSBroadcastManager *)<em>manager</em> didReceiveBroadcastConnectResult:(GSBroadcastConnectResult)<em>connectResult</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>manager</code></th>
+						<td><p>触发此代理的GSBroadcastManager对象</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>connectResult</code></th>
+						<td><p>枚举值，表示直播连接结果</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>直播连接代理</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/GSBroadcastManager.html">GSBroadcastManager</a></p></code></li>
+					
+					<li><code><p><a href="../Constants/GSBroadcastConnectResult.html">GSBroadcastConnectResult</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSBroadcastRoomDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/broadcastManager:didReceiveBroadcastJoinResult:selfUserID:rootSeverRebooted:" title="broadcastManager:didReceiveBroadcastJoinResult:selfUserID:rootSeverRebooted:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/broadcastManager:didReceiveBroadcastJoinResult:selfUserID:rootSeverRebooted:">&ndash;&nbsp;broadcastManager:didReceiveBroadcastJoinResult:selfUserID:rootSeverRebooted:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>加入直播代理</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)broadcastManager:(GSBroadcastManager *)<em>manager</em> didReceiveBroadcastJoinResult:(GSBroadcastJoinResult)<em>joinResult</em> selfUserID:(long long)<em>userID</em> rootSeverRebooted:(BOOL)<em>rebooted</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>manager</code></th>
+						<td><p>触发此代理的GSBroadcastManager对象</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>joinResult</code></th>
+						<td><p>枚举值，表示加入直播结果</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>rebooted</code></th>
+						<td><p>rebooted为YES，表示这次连接行为的产生是由于根服务器重启而导致的重连</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>selfUserID</code></th>
+						<td><p>自己的用户ID</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>加入直播代理</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/GSBroadcastManager.html">GSBroadcastManager</a></p></code></li>
+					
+					<li><code><p><a href="../Constants/GSBroadcastConnectResult.html">GSBroadcastConnectResult</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSBroadcastRoomDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/broadcastManager:didSelfLeaveBroadcastFor:" title="broadcastManager:didSelfLeaveBroadcastFor:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/broadcastManager:didSelfLeaveBroadcastFor:">&ndash;&nbsp;broadcastManager:didSelfLeaveBroadcastFor:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>自己离开直播代理</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)broadcastManager:(GSBroadcastManager *)<em>manager</em> didSelfLeaveBroadcastFor:(GSBroadcastLeaveReason)<em>leaveReason</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>manager</code></th>
+						<td><p>触发此代理的GSBroadcastManager对象</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>leaveReason</code></th>
+						<td><p>枚举值，表示离开直播的原因</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>自己离开直播代理</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/GSBroadcastManager.html">GSBroadcastManager</a></p></code></li>
+					
+					<li><code><p><a href="../Constants/GSBroadcastLeaveReason.html">GSBroadcastLeaveReason</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSBroadcastRoomDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/broadcastManagerWillStartReconnect:" title="broadcastManagerWillStartReconnect:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/broadcastManagerWillStartReconnect:">&ndash;&nbsp;broadcastManagerWillStartReconnect:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>直播重连代理</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)broadcastManagerWillStartReconnect:(GSBroadcastManager *)<em>manager</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>manager</code></th>
+						<td><p>触发此代理的GSBroadcastManager对象</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>直播重连代理</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/GSBroadcastManager.html">GSBroadcastManager</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSBroadcastRoomDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/broadcastManager:didSetLocked:" title="broadcastManager:didSetLocked:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/broadcastManager:didSetLocked:">&ndash;&nbsp;broadcastManager:didSetLocked:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>锁住/解锁 房间代理</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)broadcastManager:(GSBroadcastManager *)<em>manager</em> didSetLocked:(BOOL)<em>locked</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>manager</code></th>
+						<td><p>触发此代理的GSBroadcastManager对象</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>locked</code></th>
+						<td><p>若值为YES，则房间被锁住，若值为NO，房间被解锁</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>锁住/解锁 房间代理</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/GSBroadcastManager.html">GSBroadcastManager</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSBroadcastRoomDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/broadcastManager:didSetStatus:" title="broadcastManager:didSetStatus:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/broadcastManager:didSetStatus:">&ndash;&nbsp;broadcastManager:didSetStatus:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>直播状态改变代理，比如暂停或者恢复；如果是直播结束，将从 -(void)broadcastManager:didSelfLeaveBroadcastFor:回来， 因为直播结束，默认都会被踢出</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)broadcastManager:(GSBroadcastManager *)<em>manager</em> didSetStatus:(GSBroadcastStatus)<em>status</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>manager</code></th>
+						<td><p>触发此代理的GSBroadcastManager对象</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>status</code></th>
+						<td><p>枚举值表示状态</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>直播状态改变代理，比如暂停或者恢复；如果是直播结束，将从 -(void)broadcastManager:didSelfLeaveBroadcastFor:回来， 因为直播结束，默认都会被踢出</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/GSBroadcastManager.html">GSBroadcastManager</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSBroadcastRoomDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/broadcastManager:didSetRecordingStatus:" title="broadcastManager:didSetRecordingStatus:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/broadcastManager:didSetRecordingStatus:">&ndash;&nbsp;broadcastManager:didSetRecordingStatus:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>房间开启录音代理</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)broadcastManager:(GSBroadcastManager *)<em>manager</em> didSetRecordingStatus:(GSBroadcastStatus)<em>status</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>manager</code></th>
+						<td><p>触发此代理的GSBroadcastManager对象</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>status</code></th>
+						<td><p>枚举值表示状态</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>房间开启录音代理</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/GSBroadcastManager.html">GSBroadcastManager</a></p></code></li>
+					
+					<li><code><p><a href="../Constants/GSBroadcastStatus.html">GSBroadcastStatus</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSBroadcastRoomDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/broadcastManager:didReceiveBroadcastInfoKey:value:" title="broadcastManager:didReceiveBroadcastInfoKey:value:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/broadcastManager:didReceiveBroadcastInfoKey:value:">&ndash;&nbsp;broadcastManager:didReceiveBroadcastInfoKey:value:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取房间信息代理</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)broadcastManager:(GSBroadcastManager *)<em>manager</em> didReceiveBroadcastInfoKey:(NSString *)<em>key</em> value:(long long)<em>value</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>manager</code></th>
+						<td><p>触发此代理的GSBroadcastManager对象</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>key</code></th>
+						<td><p>键</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>value</code></th>
+						<td><p>值</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取房间信息代理</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/GSBroadcastManager.html">GSBroadcastManager</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSBroadcastRoomDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/broadcastManager:didReceiveOtherUser:" title="broadcastManager:didReceiveOtherUser:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/broadcastManager:didReceiveOtherUser:">&ndash;&nbsp;broadcastManager:didReceiveOtherUser:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>其他用户加入房间代理</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)broadcastManager:(GSBroadcastManager *)<em>manager</em> didReceiveOtherUser:(GSUserInfo *)<em>userInfo</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>manager</code></th>
+						<td><p>触发此代理的GSBroadcastManager对象</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userInfo</code></th>
+						<td><p>用户信息</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>其他用户加入房间代理</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/GSBroadcastManager.html">GSBroadcastManager</a></p></code></li>
+					
+					<li><code><p><a href="../Classes/GSUserInfo.html">GSUserInfo</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSBroadcastRoomDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/broadcastManager:didLoseOtherUser:" title="broadcastManager:didLoseOtherUser:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/broadcastManager:didLoseOtherUser:">&ndash;&nbsp;broadcastManager:didLoseOtherUser:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>其他用户离开房间</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)broadcastManager:(GSBroadcastManager *)<em>manager</em> didLoseOtherUser:(long long)<em>userID</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>manager</code></th>
+						<td><p>触发此代理的GSBroadcastManager对象</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userID</code></th>
+						<td><p>离开直播的用户ID</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>其他用户离开房间</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/GSBroadcastManager.html">GSBroadcastManager</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSBroadcastRoomDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/broadcastManager:didUpdateUserInfo:updateFlag:" title="broadcastManager:didUpdateUserInfo:updateFlag:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/broadcastManager:didUpdateUserInfo:updateFlag:">&ndash;&nbsp;broadcastManager:didUpdateUserInfo:updateFlag:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>用户信息更新代理</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)broadcastManager:(GSBroadcastManager *)<em>manager</em> didUpdateUserInfo:(GSUserInfo *)<em>userInfo</em> updateFlag:(GSUserInfoUpdate)<em>flag</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>manager</code></th>
+						<td><p>触发此代理的GSBroadcastManager对象</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userInfo</code></th>
+						<td><p>更新后的用户信息</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>flag</code></th>
+						<td><p>枚举值表示用户更新的字段</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>用户信息更新代理</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/GSBroadcastManager.html">GSBroadcastManager</a></p></code></li>
+					
+					<li><code><p><a href="../Classes/GSUserInfo.html">GSUserInfo</a></p></code></li>
+					
+					<li><code><p><a href="../Constants/GSUserInfoUpdate.html">GSUserInfoUpdate</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSBroadcastRoomDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/broadcastManager:broadcastMessage:" title="broadcastManager:broadcastMessage:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/broadcastManager:broadcastMessage:">&ndash;&nbsp;broadcastManager:broadcastMessage:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>广播消息代理</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)broadcastManager:(GSBroadcastManager *)<em>manager</em> broadcastMessage:(NSString *)<em>message</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>manager</code></th>
+						<td><p>触发此代理的GSBroadcastManager对象</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>message</code></th>
+						<td><p>广播的内容</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>广播消息代理</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/GSBroadcastManager.html">GSBroadcastManager</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSBroadcastRoomDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/broadcastManager:checkinRequestCountingDownFrom:" title="broadcastManager:checkinRequestCountingDownFrom:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/broadcastManager:checkinRequestCountingDownFrom:">&ndash;&nbsp;broadcastManager:checkinRequestCountingDownFrom:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>点名倒计时代理</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)broadcastManager:(GSBroadcastManager *)<em>manager</em> checkinRequestCountingDownFrom:(NSInteger)<em>number</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>manager</code></th>
+						<td><p>触发此代理的GSBroadcastManager对象</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>number</code></th>
+						<td><p>倒计时开始的数字</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>点名倒计时代理</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/GSBroadcastManager.html">GSBroadcastManager</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSBroadcastRoomDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/broadcastManager:checkinRequestResponsedUser:" title="broadcastManager:checkinRequestResponsedUser:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/broadcastManager:checkinRequestResponsedUser:">&ndash;&nbsp;broadcastManager:checkinRequestResponsedUser:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>收到用户回应点名代理</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)broadcastManager:(GSBroadcastManager *)<em>manager</em> checkinRequestResponsedUser:(long long)<em>userID</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>manager</code></th>
+						<td><p>触发此代理的GSBroadcastManager对象</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userID</code></th>
+						<td><p>回应点名的用户的UserID</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>收到用户回应点名代理</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/GSBroadcastManager.html">GSBroadcastManager</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSBroadcastRoomDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/broadcastManager:handUpUser:extraData:" title="broadcastManager:handUpUser:extraData:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/broadcastManager:handUpUser:extraData:">&ndash;&nbsp;broadcastManager:handUpUser:extraData:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>举手代理(场景类似于课堂中的举手）</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)broadcastManager:(GSBroadcastManager *)<em>manager</em> handUpUser:(long long)<em>userID</em> extraData:(NSString *)<em>data</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>manager</code></th>
+						<td><p>触发此代理的GSBroadcastManager对象</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userID</code></th>
+						<td><p>举手的用户的UserID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>data</code></th>
+						<td><p>额外字段</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>举手代理(场景类似于课堂中的举手）</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/GSBroadcastManager.html">GSBroadcastManager</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSBroadcastRoomDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/broadcastManager:handDownUser:" title="broadcastManager:handDownUser:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/broadcastManager:handDownUser:">&ndash;&nbsp;broadcastManager:handDownUser:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>手放下代理（对应于举手）</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)broadcastManager:(GSBroadcastManager *)<em>manager</em> handDownUser:(long long)<em>userID</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>manager</code></th>
+						<td><p>触发此代理的GSBroadcastManager对象</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userID</code></th>
+						<td><p>手放下的用户的UserID</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>手放下代理（对应于举手）</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/GSBroadcastManager.html">GSBroadcastManager</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSBroadcastRoomDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/broadcastManager:querySettingsInfoKey:strValue:" title="broadcastManager:querySettingsInfoKey:strValue:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/broadcastManager:querySettingsInfoKey:strValue:">&ndash;&nbsp;broadcastManager:querySettingsInfoKey:strValue:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>索取直播设置信息代理</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)broadcastManager:(GSBroadcastManager *)<em>manager</em> querySettingsInfoKey:(NSString *)<em>key</em> strValue:(NSString **)<em>value</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>manager</code></th>
+						<td><p>触发此代理的GSBroadcastManager对象</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>key</code></th>
+						<td><p>键</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>value</code></th>
+						<td><p>值</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>索取直播设置信息代理</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/GSBroadcastManager.html">GSBroadcastManager</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSBroadcastRoomDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/broadcastManager:querySettingsInfoKey:numberValue:" title="broadcastManager:querySettingsInfoKey:numberValue:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/broadcastManager:querySettingsInfoKey:numberValue:">&ndash;&nbsp;broadcastManager:querySettingsInfoKey:numberValue:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>索取直播设置信息代理</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)broadcastManager:(GSBroadcastManager *)<em>manager</em> querySettingsInfoKey:(NSString *)<em>key</em> numberValue:(int *)<em>value</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>manager</code></th>
+						<td><p>触发此代理的GSBroadcastManager对象</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>key</code></th>
+						<td><p>键</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>value</code></th>
+						<td><p>值</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>索取直播设置信息代理</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/GSBroadcastManager.html">GSBroadcastManager</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSBroadcastRoomDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/broadcastManager:saveSettingsInfoKey:strValue:" title="broadcastManager:saveSettingsInfoKey:strValue:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/broadcastManager:saveSettingsInfoKey:strValue:">&ndash;&nbsp;broadcastManager:saveSettingsInfoKey:strValue:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>保存直播设置信息代理</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)broadcastManager:(GSBroadcastManager *)<em>manager</em> saveSettingsInfoKey:(NSString *)<em>key</em> strValue:(NSString *)<em>value</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>manager</code></th>
+						<td><p>触发此代理的GSBroadcastManager对象</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>key</code></th>
+						<td><p>键</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>value</code></th>
+						<td><p>值</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>保存直播设置信息代理</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/GSBroadcastManager.html">GSBroadcastManager</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSBroadcastRoomDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/broadcastManager:saveSettingsInfoKey:numberValue:" title="broadcastManager:saveSettingsInfoKey:numberValue:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/broadcastManager:saveSettingsInfoKey:numberValue:">&ndash;&nbsp;broadcastManager:saveSettingsInfoKey:numberValue:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>保存直播设置信息代理</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)broadcastManager:(GSBroadcastManager *)<em>manager</em> saveSettingsInfoKey:(NSString *)<em>key</em> numberValue:(int)<em>value</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>manager</code></th>
+						<td><p>触发此代理的GSBroadcastManager对象</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>key</code></th>
+						<td><p>键</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>value</code></th>
+						<td><p>值</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>保存直播设置信息代理</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/GSBroadcastManager.html">GSBroadcastManager</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSBroadcastRoomDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/broadcastManager:upgradedAppDownLoadUrl:" title="broadcastManager:upgradedAppDownLoadUrl:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/broadcastManager:upgradedAppDownLoadUrl:">&ndash;&nbsp;broadcastManager:upgradedAppDownLoadUrl:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>程序升级提示代理</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)broadcastManager:(GSBroadcastManager *)<em>manager</em> upgradedAppDownLoadUrl:(NSString *)<em>urlStr</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>manager</code></th>
+						<td><p>触发此代理的GSBroadcastManager对象</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>urlStr</code></th>
+						<td><p>下载的url</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>程序升级提示代理</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/GSBroadcastManager.html">GSBroadcastManager</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSBroadcastRoomDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/broadcastManager:networkStatus:" title="broadcastManager:networkStatus:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/broadcastManager:networkStatus:">&ndash;&nbsp;broadcastManager:networkStatus:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>网络状态报告代理, 最好的状态为100, 最差的状态为0（接近断网）, 小于50都为较差;</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)broadcastManager:(GSBroadcastManager *)<em>manager</em> networkStatus:(Byte)<em>level</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>manager</code></th>
+						<td><p>触发此代理的GSBroadcastManager对象</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>level</code></th>
+						<td><p>网络状态值</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>网络状态报告代理, 最好的状态为100, 最差的状态为0（接近断网）, 小于50都为较差;</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/GSBroadcastManager.html">GSBroadcastManager</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSBroadcastRoomDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/broadcastManager:lotteryActionType:userNames:" title="broadcastManager:lotteryActionType:userNames:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/broadcastManager:lotteryActionType:userNames:">&ndash;&nbsp;broadcastManager:lotteryActionType:userNames:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>中奖代理</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)broadcastManager:(GSBroadcastManager *)<em>manager</em> lotteryActionType:(GSLotteryActionType)<em>type</em> userNames:(NSString *)<em>usernames</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>manager</code></th>
+						<td><p>触发此代理的GSBroadcastManager对象</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>type</code></th>
+						<td><p>抽奖动作类型</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>usernames</code></th>
+						<td><p>中奖名单，多人之间有"\n"间隔</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>中奖代理</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/GSBroadcastManager.html">GSBroadcastManager</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSBroadcastRoomDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/broadcastManager:didSetupCustomBitRate:" title="broadcastManager:didSetupCustomBitRate:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/broadcastManager:didSetupCustomBitRate:">&ndash;&nbsp;broadcastManager:didSetupCustomBitRate:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>设置采集比特率</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)broadcastManager:(GSBroadcastManager *)<em>manager</em> didSetupCustomBitRate:(VTCompressionSessionRef)<em>session</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>manager</code></th>
+						<td><p>触发此代理的GSBroadcastManager对象</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>session</code></th>
+						<td><p>session</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>设置采集比特率</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSBroadcastRoomDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/broadcastManager:phoneServiceStatus:" title="broadcastManager:phoneServiceStatus:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/broadcastManager:phoneServiceStatus:">&ndash;&nbsp;broadcastManager:phoneServiceStatus:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>直播间是否有接入电话的功能</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)broadcastManager:(GSBroadcastManager *)<em>manager</em> phoneServiceStatus:(BOOL)<em>enabled</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>manager</code></th>
+						<td><p>触发此代理的GSBroadcastManager对象</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>enabled</code></th>
+						<td><p>是否支持电话接入</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>直播间是否有接入电话的功能</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSBroadcastRoomDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/broadcastManager:phoneNumber:reason:status:" title="broadcastManager:phoneNumber:reason:status:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/broadcastManager:phoneNumber:reason:status:">&ndash;&nbsp;broadcastManager:phoneNumber:reason:status:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>拨打电话结果</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)broadcastManager:(GSBroadcastManager *)<em>manager</em> phoneNumber:(NSString *)<em>phoneNumber</em> reason:(int)<em>reason</em> status:(int)<em>status</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>manager</code></th>
+						<td><p>触发此代理的GSBroadcastManager对象</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>phoneNumber</code></th>
+						<td><p>呼叫的号码</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>reason</code></th>
+						<td><p>reason的值为3 表示呼叫成功</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>status</code></th>
+						<td><p>在reason的值不等于3的情况下，status表示呼叫失败的具体原因： 0-其他原因；1-被主持人挂断；2-参会人主动挂断； 3-电话未接通；
+                4-占线； 7-会议人数已满；8-会议室已上锁；9-不允许外呼</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>拨打电话结果</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSBroadcastRoomDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2017 Gensee. All rights reserved. Updated: 2017-02-22</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

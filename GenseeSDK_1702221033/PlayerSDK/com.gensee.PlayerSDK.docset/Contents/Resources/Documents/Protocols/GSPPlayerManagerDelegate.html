@@ -1,0 +1,2097 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>GSPPlayerManagerDelegate Protocol Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">PlayerSDK </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Gensee</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/playerManager:didReceiveAudioData:length:level:">- playerManager:didReceiveAudioData:length:level:</option>
+		
+		<option value="//api/name/playerManager:didReceiveBroadcastMessage:senderID:">- playerManager:didReceiveBroadcastMessage:senderID:</option>
+		
+		<option value="//api/name/playerManager:didReceiveChatMessage:">- playerManager:didReceiveChatMessage:</option>
+		
+		<option value="//api/name/playerManager:didReceiveInvestigation:">- playerManager:didReceiveInvestigation:</option>
+		
+		<option value="//api/name/playerManager:didReceiveLiveText:language:">- playerManager:didReceiveLiveText:language:</option>
+		
+		<option value="//api/name/playerManager:didReceiveLottryInfo:type:">- playerManager:didReceiveLottryInfo:type:</option>
+		
+		<option value="//api/name/playerManager:didReceiveMediaInvitation:action:">- playerManager:didReceiveMediaInvitation:action:</option>
+		
+		<option value="//api/name/playerManager:didReceiveMediaModuleFocus:">- playerManager:didReceiveMediaModuleFocus:</option>
+		
+		<option value="//api/name/playerManager:didReceiveMediaScreenStatus:">- playerManager:didReceiveMediaScreenStatus:</option>
+		
+		<option value="//api/name/playerManager:didReceiveQaData:">- playerManager:didReceiveQaData:</option>
+		
+		<option value="//api/name/playerManager:didReceiveRollCall:">- playerManager:didReceiveRollCall:</option>
+		
+		<option value="//api/name/playerManager:didReceiveSelfJoinResult:">- playerManager:didReceiveSelfJoinResult:</option>
+		
+		<option value="//api/name/playerManager:didReceiveSelfJoinResult:currentIDC:">- playerManager:didReceiveSelfJoinResult:currentIDC:</option>
+		
+		<option value="//api/name/playerManager:didReceiveSubjectInfo:">- playerManager:didReceiveSubjectInfo:</option>
+		
+		<option value="//api/name/playerManager:didReceiveVideoData:height:width:">- playerManager:didReceiveVideoData:height:width:</option>
+		
+		<option value="//api/name/playerManager:didSelfLeaveFor:">- playerManager:didSelfLeaveFor:</option>
+		
+		<option value="//api/name/playerManager:didSetChatEnable:">- playerManager:didSetChatEnable:</option>
+		
+		<option value="//api/name/playerManager:didSetQaEnable:">- playerManager:didSetQaEnable:</option>
+		
+		<option value="//api/name/playerManager:didUserJoin:">- playerManager:didUserJoin:</option>
+		
+		<option value="//api/name/playerManager:didUserLeave:">- playerManager:didUserLeave:</option>
+		
+		<option value="//api/name/playerManager:didUserStatusChange:">- playerManager:didUserStatusChange:</option>
+		
+		<option value="//api/name/playerManager:isPaused:">- playerManager:isPaused:</option>
+		
+		<option value="//api/name/playerManager:isSelfMute:">- playerManager:isSelfMute:</option>
+		
+		<option value="//api/name/playerManager:onlineNum:">- playerManager:onlineNum:</option>
+		
+		<option value="//api/name/playerManagerDidDocumentClose:">- playerManagerDidDocumentClose:</option>
+		
+		<option value="//api/name/playerManagerDidDocumentSwitch:">- playerManagerDidDocumentSwitch:</option>
+		
+		<option value="//api/name/playerManagerDidVideoBegin:">- playerManagerDidVideoBegin:</option>
+		
+		<option value="//api/name/playerManagerDidVideoEnd:">- playerManagerDidVideoEnd:</option>
+		
+		<option value="//api/name/playerManagerWillBuffer:isBuffering:">- playerManagerWillBuffer:isBuffering:</option>
+		
+		<option value="//api/name/playerManagerWillReconnect:">- playerManagerWillReconnect:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">GSPPlayerManagerDelegate Protocol Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Conforms to</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>GSPPlayerManager.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>直播中的事件回调，在调用了某些方法，会产生一些事件回调，如有用户加入或退出直播，收到音频数据，正在重连等</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/playerManager:didReceiveSelfJoinResult:" title="playerManager:didReceiveSelfJoinResult:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/playerManager:didReceiveSelfJoinResult:">&ndash;&nbsp;playerManager:didReceiveSelfJoinResult:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>在调用了－joinWithParam: 后会调用此代理，返回加入直播的结果</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)playerManager:(GSPPlayerManager *)<em>playerManager</em> didReceiveSelfJoinResult:(GSPJoinResult)<em>joinResult</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>playerManager</code></th>
+						<td><p>调用该代理的直播管理实例</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>joinResult</code></th>
+						<td><p>加入结果</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>在调用了－joinWithParam: 后会调用此代理，返回加入直播的结果</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSPPlayerManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/playerManager:didReceiveSelfJoinResult:currentIDC:" title="playerManager:didReceiveSelfJoinResult:currentIDC:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/playerManager:didReceiveSelfJoinResult:currentIDC:">&ndash;&nbsp;playerManager:didReceiveSelfJoinResult:currentIDC:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>在调用了－joinWithParam: 后会调用此代理，返回加入直播的结果</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)playerManager:(GSPPlayerManager *)<em>playerManager</em> didReceiveSelfJoinResult:(GSPJoinResult)<em>joinResult</em> currentIDC:(NSString *)<em>idcKey</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>playerManager</code></th>
+						<td><p>调用该代理的直播管理实例
+@param</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>joinResult</code></th>
+						<td><p>加入结果</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>在调用了－joinWithParam: 后会调用此代理，返回加入直播的结果</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSPPlayerManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/playerManager:didReceiveSubjectInfo:" title="playerManager:didReceiveSubjectInfo:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/playerManager:didReceiveSubjectInfo:">&ndash;&nbsp;playerManager:didReceiveSubjectInfo:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取直播主题</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)playerManager:(GSPPlayerManager *)<em>playerManager</em> didReceiveSubjectInfo:(NSString *)<em>subject</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>playerManager</code></th>
+						<td><p>调用该代理的直播管理实例</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>subject</code></th>
+						<td><p>直播主题</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取直播主题</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSPPlayerManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/playerManagerWillReconnect:" title="playerManagerWillReconnect:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/playerManagerWillReconnect:">&ndash;&nbsp;playerManagerWillReconnect:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>在直播中突然意外断开连接后，会调用此代理，表示将要重连</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)playerManagerWillReconnect:(GSPPlayerManager *)<em>playerManager</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>playerManager</code></th>
+						<td><p>调用该代理的直播管理实例</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>在直播中突然意外断开连接后，会调用此代理，表示将要重连</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSPPlayerManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/playerManagerWillBuffer:isBuffering:" title="playerManagerWillBuffer:isBuffering:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/playerManagerWillBuffer:isBuffering:">&ndash;&nbsp;playerManagerWillBuffer:isBuffering:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>在直播中开始缓冲，会调用此代理，表示将要缓冲</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)playerManagerWillBuffer:(GSPPlayerManager *)<em>playerManager</em> isBuffering:(BOOL)<em>isBuffering</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>playerManager</code></th>
+						<td><p>调用该代理的直播管理实例</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>在直播中开始缓冲，会调用此代理，表示将要缓冲</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSPPlayerManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/playerManager:didSelfLeaveFor:" title="playerManager:didSelfLeaveFor:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/playerManager:didSelfLeaveFor:">&ndash;&nbsp;playerManager:didSelfLeaveFor:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>自己离开了直播，会调用此代理</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)playerManager:(GSPPlayerManager *)<em>playerManager</em> didSelfLeaveFor:(GSPLeaveReason)<em>reason</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>playerManager</code></th>
+						<td><p>调用该代理的直播管理实例</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>reason</code></th>
+						<td><p>离开直播的原因</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>自己离开了直播，会调用此代理</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSPPlayerManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/playerManager:didUserJoin:" title="playerManager:didUserJoin:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/playerManager:didUserJoin:">&ndash;&nbsp;playerManager:didUserJoin:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>有用户加入了直播，会调用此代理</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)playerManager:(GSPPlayerManager *)<em>playerManager</em> didUserJoin:(GSPUserInfo *)<em>userInfo</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>playerManager</code></th>
+						<td><p>调用该代理的直播管理实例</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userInfo</code></th>
+						<td><p>加入的用户的用户信息</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>有用户加入了直播，会调用此代理</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSPPlayerManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/playerManager:didUserLeave:" title="playerManager:didUserLeave:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/playerManager:didUserLeave:">&ndash;&nbsp;playerManager:didUserLeave:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>有用户离开了直播，会调用此代理</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)playerManager:(GSPPlayerManager *)<em>playerManager</em> didUserLeave:(GSPUserInfo *)<em>userInfo</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>playerManager</code></th>
+						<td><p>调用该代理的直播管理实例</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userInfo</code></th>
+						<td><p>离开的用户的用户信息</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>有用户离开了直播，会调用此代理</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSPPlayerManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/playerManager:didUserStatusChange:" title="playerManager:didUserStatusChange:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/playerManager:didUserStatusChange:">&ndash;&nbsp;playerManager:didUserStatusChange:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>有用户状态发生了改变，会调用此代理</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)playerManager:(GSPPlayerManager *)<em>playerManager</em> didUserStatusChange:(GSPUserInfo *)<em>userInfo</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>playerManager</code></th>
+						<td><p>调用该代理的直播管理实例</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userInfo</code></th>
+						<td><p>更改后的用户的用户信息</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>有用户状态发生了改变，会调用此代理</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSPPlayerManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/playerManager:didReceiveAudioData:length:level:" title="playerManager:didReceiveAudioData:length:level:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/playerManager:didReceiveAudioData:length:level:">&ndash;&nbsp;playerManager:didReceiveAudioData:length:level:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>收到音频数据流，会回调此代理</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)playerManager:(GSPPlayerManager *)<em>playerManager</em> didReceiveAudioData:(const unsigned char *)<em>data</em> length:(unsigned)<em>length</em> level:(unsigned)<em>level</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>playerManager</code></th>
+						<td><p>调用该代理的直播管理实例</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>data</code></th>
+						<td><p>音频流数据</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>length</code></th>
+						<td><p>数据长度</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>level</code></th>
+						<td><p>音量大小</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>收到音频数据流，会回调此代理</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSPPlayerManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/playerManagerDidVideoBegin:" title="playerManagerDidVideoBegin:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/playerManagerDidVideoBegin:">&ndash;&nbsp;playerManagerDidVideoBegin:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>视频开始事件代理</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)playerManagerDidVideoBegin:(GSPPlayerManager *)<em>playerManager</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>playerManager</code></th>
+						<td><p>调用该代理的直播管理实例</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>视频开始事件代理</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSPPlayerManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/playerManagerDidVideoEnd:" title="playerManagerDidVideoEnd:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/playerManagerDidVideoEnd:">&ndash;&nbsp;playerManagerDidVideoEnd:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>视频结束事件代理</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)playerManagerDidVideoEnd:(GSPPlayerManager *)<em>playerManager</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>playerManager</code></th>
+						<td><p>调用该代理的直播管理实例</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>视频结束事件代理</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSPPlayerManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/playerManagerDidDocumentClose:" title="playerManagerDidDocumentClose:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/playerManagerDidDocumentClose:">&ndash;&nbsp;playerManagerDidDocumentClose:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>文档关闭事件代理</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)playerManagerDidDocumentClose:(GSPPlayerManager *)<em>playerManager</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>playerManager</code></th>
+						<td><p>调用该代理的直播管理实例</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>文档关闭事件代理</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSPPlayerManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/playerManagerDidDocumentSwitch:" title="playerManagerDidDocumentSwitch:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/playerManagerDidDocumentSwitch:">&ndash;&nbsp;playerManagerDidDocumentSwitch:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>文档切换事件代理</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)playerManagerDidDocumentSwitch:(GSPPlayerManager *)<em>playerManager</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>playerManager</code></th>
+						<td><p>调用该代理的直播管理实例</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>文档切换事件代理</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSPPlayerManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/playerManager:didSetChatEnable:" title="playerManager:didSetChatEnable:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/playerManager:didSetChatEnable:">&ndash;&nbsp;playerManager:didSetChatEnable:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>直播聊天权限改变代理</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)playerManager:(GSPPlayerManager *)<em>playerManager</em> didSetChatEnable:(BOOL)<em>bEnable</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>playerManager</code></th>
+						<td><p>调用该代理的直播管理实例</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>bEnable</code></th>
+						<td><p>整个直播是否支持聊天</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>直播聊天权限改变代理</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSPPlayerManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/playerManager:didSetQaEnable:" title="playerManager:didSetQaEnable:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/playerManager:didSetQaEnable:">&ndash;&nbsp;playerManager:didSetQaEnable:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>直播问答权限改变代理</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)playerManager:(GSPPlayerManager *)<em>playerManager</em> didSetQaEnable:(BOOL)<em>bEnable</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>playerManager</code></th>
+						<td><p>调用该代理的直播管理实例</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>bEnable</code></th>
+						<td><p>整个直播是否支持问答</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>直播问答权限改变代理</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSPPlayerManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/playerManager:isSelfMute:" title="playerManager:isSelfMute:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/playerManager:isSelfMute:">&ndash;&nbsp;playerManager:isSelfMute:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>自己是否被禁言</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)playerManager:(GSPPlayerManager *)<em>playerManager</em> isSelfMute:(BOOL)<em>bMute</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>playerManager</code></th>
+						<td><p>调用该代理的直播管理实例</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>bMute</code></th>
+						<td><p>是否被禁言，YES表示被禁言</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>自己是否被禁言</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSPPlayerManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/playerManager:isPaused:" title="playerManager:isPaused:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/playerManager:isPaused:">&ndash;&nbsp;playerManager:isPaused:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>直播是否暂停</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)playerManager:(GSPPlayerManager *)<em>playerManager</em> isPaused:(BOOL)<em>isPaused</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>playerManager</code></th>
+						<td><p>调用该代理的直播管理实例</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>isPaused</code></th>
+						<td><p>YES表示直播已暂停，NO表示直播进行中</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>直播是否暂停</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSPPlayerManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/playerManager:didReceiveChatMessage:" title="playerManager:didReceiveChatMessage:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/playerManager:didReceiveChatMessage:">&ndash;&nbsp;playerManager:didReceiveChatMessage:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>收到聊天信息代理</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)playerManager:(GSPPlayerManager *)<em>playerManager</em> didReceiveChatMessage:(GSPChatMessage *)<em>message</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>playerManager</code></th>
+						<td><p>调用该代理的直播管理实例</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>message</code></th>
+						<td><p>收到的聊天信息</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>收到聊天信息代理</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSPPlayerManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/playerManager:didReceiveQaData:" title="playerManager:didReceiveQaData:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/playerManager:didReceiveQaData:">&ndash;&nbsp;playerManager:didReceiveQaData:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>收到问答信息代理</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)playerManager:(GSPPlayerManager *)<em>playerManager</em> didReceiveQaData:(NSArray *)<em>qaDatas</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>playerManager</code></th>
+						<td><p>调用该代理的直播管理实例</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>qaDatas</code></th>
+						<td><p>收到的问答信息数组，数组成员为GSPQaData实例</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>收到问答信息代理</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSPPlayerManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/playerManager:didReceiveInvestigation:" title="playerManager:didReceiveInvestigation:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/playerManager:didReceiveInvestigation:">&ndash;&nbsp;playerManager:didReceiveInvestigation:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>收到问卷调查代理</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)playerManager:(GSPPlayerManager *)<em>playerManager</em> didReceiveInvestigation:(NSArray *)<em>investigations</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>playerManager</code></th>
+						<td><p>调用该代理的直播管理实例</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>investigations</code></th>
+						<td><p>收到的问卷调查数组，数组成员为GSPInvestigation实例</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>收到问卷调查代理</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSPPlayerManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/playerManager:didReceiveBroadcastMessage:senderID:" title="playerManager:didReceiveBroadcastMessage:senderID:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/playerManager:didReceiveBroadcastMessage:senderID:">&ndash;&nbsp;playerManager:didReceiveBroadcastMessage:senderID:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>收到广播消息</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)playerManager:(GSPPlayerManager *)<em>playerManager</em> didReceiveBroadcastMessage:(NSString *)<em>msg</em> senderID:(long long)<em>senderID</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>playerManager</code></th>
+						<td><p>调用该代理的直播管理实例</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>msg</code></th>
+						<td><p>广播消息</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>senderID</code></th>
+						<td><p>发送者userID</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>收到广播消息</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSPPlayerManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/playerManager:onlineNum:" title="playerManager:onlineNum:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/playerManager:onlineNum:">&ndash;&nbsp;playerManager:onlineNum:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>在线人数</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)playerManager:(GSPPlayerManager *)<em>playerManager</em> onlineNum:(NSUInteger)<em>num</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>playerManager</code></th>
+						<td><p>调用该代理的直播管理实例</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>num</code></th>
+						<td><p>在线总人数</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>在线人数</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSPPlayerManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/playerManager:didReceiveMediaInvitation:action:" title="playerManager:didReceiveMediaInvitation:action:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/playerManager:didReceiveMediaInvitation:action:">&ndash;&nbsp;playerManager:didReceiveMediaInvitation:action:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>收到音视频邀请</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)playerManager:(GSPPlayerManager *)<em>playerManager</em> didReceiveMediaInvitation:(GSPMediaInvitationType)<em>type</em> action:(BOOL)<em>on</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>playerManager</code></th>
+						<td><p>调用该代理的直播管理实例</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>type</code></th>
+						<td><p>邀请类型</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>on</code></th>
+						<td><p>打开或关闭</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>收到音视频邀请</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSPPlayerManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/playerManager:didReceiveMediaModuleFocus:" title="playerManager:didReceiveMediaModuleFocus:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/playerManager:didReceiveMediaModuleFocus:">&ndash;&nbsp;playerManager:didReceiveMediaModuleFocus:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>桌面以视频或者文档为主</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)playerManager:(GSPPlayerManager *)<em>playerManager</em> didReceiveMediaModuleFocus:(GSModuleFocusType)<em>focus</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>playerManager</code></th>
+						<td><p>调用该代理的直播管理实例
+@param focus</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>桌面以视频或者文档为主</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSPPlayerManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/playerManager:didReceiveMediaScreenStatus:" title="playerManager:didReceiveMediaScreenStatus:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/playerManager:didReceiveMediaScreenStatus:">&ndash;&nbsp;playerManager:didReceiveMediaScreenStatus:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>当前的屏幕状态</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)playerManager:(GSPPlayerManager *)<em>playerManager</em> didReceiveMediaScreenStatus:(BOOL)<em>bIsOpen</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>playerManager</code></th>
+						<td><p>调用该代理的直播管理实例</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>bIsOpen</code></th>
+						<td><p>桌面共享打开或关闭</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>当前的屏幕状态</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSPPlayerManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/playerManager:didReceiveLiveText:language:" title="playerManager:didReceiveLiveText:language:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/playerManager:didReceiveLiveText:language:">&ndash;&nbsp;playerManager:didReceiveLiveText:language:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>收到文字直播消息</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)playerManager:(GSPPlayerManager *)<em>playerManager</em> didReceiveLiveText:(NSString *)<em>liveText</em> language:(NSString *)<em>language</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>playerManager</code></th>
+						<td><p>调用该代理的直播管理实例</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>liveText</code></th>
+						<td><p>文字直播内容</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>language</code></th>
+						<td><p>文字直播语言类型</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>收到文字直播消息</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSPPlayerManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/playerManager:didReceiveRollCall:" title="playerManager:didReceiveRollCall:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/playerManager:didReceiveRollCall:">&ndash;&nbsp;playerManager:didReceiveRollCall:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>收到点名</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)playerManager:(GSPPlayerManager *)<em>playerManager</em> didReceiveRollCall:(NSUInteger)<em>seconds</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>playerManager</code></th>
+						<td><p>调用该代理的直播管理实例</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>seconds</code></th>
+						<td><p>点名倒计时</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>收到点名</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSPPlayerManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/playerManager:didReceiveLottryInfo:type:" title="playerManager:didReceiveLottryInfo:type:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/playerManager:didReceiveLottryInfo:type:">&ndash;&nbsp;playerManager:didReceiveLottryInfo:type:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>收到抽奖消息</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)playerManager:(GSPPlayerManager *)<em>playerManager</em> didReceiveLottryInfo:(NSString *)<em>names</em> type:(GSLottryType)<em>type</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>playerManager</code></th>
+						<td><p>调用该代理的直播管理实例</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>names</code></th>
+						<td><p>中奖名单</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>type</code></th>
+						<td><p>抽奖消息类型</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>收到抽奖消息</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSPPlayerManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/playerManager:didReceiveVideoData:height:width:" title="playerManager:didReceiveVideoData:height:width:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/playerManager:didReceiveVideoData:height:width:">&ndash;&nbsp;playerManager:didReceiveVideoData:height:width:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>收到视频每一帧数据</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)playerManager:(GSPPlayerManager *)<em>playerManager</em> didReceiveVideoData:(const unsigned char *)<em>data</em> height:(int)<em>height</em> width:(int)<em>width</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>playerManager</code></th>
+						<td><p>调用该代理的直播管理实例</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>data</code></th>
+						<td><p>视频每一帧数据</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>height</code></th>
+						<td><p>高</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>width</code></th>
+						<td><p>宽</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>收到视频每一帧数据</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSPPlayerManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2017 Gensee. All rights reserved. Updated: 2017-02-22</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

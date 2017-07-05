@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>VodDownLoader Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">VodSDK </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Gensee</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/delegate">delegate</option>
+		
+		<option value="//api/name/httpAPIEnabled">httpAPIEnabled</option>
+		
+		<option value="//api/name/mCurrentDownloadId">mCurrentDownloadId</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/addItem:number:loginName:nickName:vodPassword:loginPassword:downFlag:serType:isBox:oldVersion:kToken:customUserID:">- addItem:number:loginName:nickName:vodPassword:loginPassword:downFlag:serType:isBox:oldVersion:kToken:customUserID:</option>
+		
+		<option value="//api/name/addItem:number:loginName:vodPassword:loginPassword:downFlag:serType:oldVersion:kToken:customUserID:">- addItem:number:loginName:vodPassword:loginPassword:downFlag:serType:oldVersion:kToken:customUserID:</option>
+		
+		<option value="//api/name/addItem:number:loginName:vodPassword:loginPassword:vodid:downFlag:serType:oldVersion:kToken:customUserID:">- addItem:number:loginName:vodPassword:loginPassword:vodid:downFlag:serType:oldVersion:kToken:customUserID:</option>
+		
+		<option value="//api/name/addItemToDataBase:">- addItemToDataBase:</option>
+		
+		<option value="//api/name/delete:">- delete:</option>
+		
+		<option value="//api/name/download:chatPost:">- download:chatPost:</option>
+		
+		<option value="//api/name/initWithDelegate:">- initWithDelegate:</option>
+		
+		<option value="//api/name/isAutoDownloading">- isAutoDownloading</option>
+		
+		<option value="//api/name/setAutoDownloading:">- setAutoDownloading:</option>
+		
+		<option value="//api/name/start:chatPost:">- start:chatPost:</option>
+		
+		<option value="//api/name/stop:">- stop:</option>
+		
+		<option value="//api/name/vodDownloadPath:">- vodDownloadPath:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">VodDownLoader Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>VodDownLoader.h<br />VodDownLoader.mm</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>VodDownLoader是管理点播件（录制件）下载的类</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/delegate" title="delegate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/delegate">&nbsp;&nbsp;delegate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>VodDownLoadDelegate代理</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, weak) id&lt;VodDownLoadDelegate&gt; delegate</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>VodDownLoadDelegate代理</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VodDownLoader.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/mCurrentDownloadId" title="mCurrentDownloadId"></a>
+	<h3 class="method-title"><code><a href="#//api/name/mCurrentDownloadId">&nbsp;&nbsp;mCurrentDownloadId</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>当前正在下载的点播件（录制件）的ID</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *mCurrentDownloadId</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>当前正在下载的点播件（录制件）的ID</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VodDownLoader.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/httpAPIEnabled" title="httpAPIEnabled"></a>
+	<h3 class="method-title"><code><a href="#//api/name/httpAPIEnabled">&nbsp;&nbsp;httpAPIEnabled</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>是否强制使用http接口；默认为NO，使用https</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL httpAPIEnabled</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>是否强制使用http接口；默认为NO，使用https</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VodDownLoader.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initWithDelegate:" title="initWithDelegate:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithDelegate:">&ndash;&nbsp;initWithDelegate:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>初始化VodDownLoader</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id)initWithDelegate:(id&lt;VodDownLoadDelegate&gt;)<em>delegate</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>delegate</code></th>
+						<td><p>VodDownLoadDelegate代理</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>VodDownLoader实例</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>初始化VodDownLoader</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VodDownLoader.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/download:chatPost:" title="download:chatPost:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/download:chatPost:">&ndash;&nbsp;download:chatPost:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>下载点播件（录制件）</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)download:(downItem *)<em>vodItem</em> chatPost:(BOOL)<em>chatPost</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>vodItem</code></th>
+						<td><p>点播件（录制件）</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>chatPost</code></th>
+						<td><p>聊天是否按时间顺序推送</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>下载点播件（录制件）</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VodDownLoader.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/start:chatPost:" title="start:chatPost:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/start:chatPost:">&ndash;&nbsp;start:chatPost:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>下载点播件（录制件）</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)start:(NSString *)<em>downloadID</em> chatPost:(BOOL)<em>chatPost</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>downloadID</code></th>
+						<td><p>要下载的点播件（录制件）的ID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>chatPost</code></th>
+						<td><p>聊天是否按时间顺序推送</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>下载点播件（录制件）</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VodDownLoader.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/delete:" title="delete:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/delete:">&ndash;&nbsp;delete:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>删除点播件（录制件）</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)delete:(NSString *)<em>downloadID</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>downloadID</code></th>
+						<td><p>要删除的点播件（录制件）的ID</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>删除结果，YES表示成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>删除点播件（录制件）</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VodDownLoader.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/stop:" title="stop:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/stop:">&ndash;&nbsp;stop:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>停止下载，已下载的部分不会删除，可继续下载，也可以理解为暂停下载</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)stop:(NSString *)<em>downloadID</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>downloadID</code></th>
+						<td><p>停止下载的点播件（录制件）的ID</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>停止下载，已下载的部分不会删除，可继续下载，也可以理解为暂停下载</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VodDownLoader.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addItem:number:loginName:nickName:vodPassword:loginPassword:downFlag:serType:isBox:oldVersion:kToken:customUserID:" title="addItem:number:loginName:nickName:vodPassword:loginPassword:downFlag:serType:isBox:oldVersion:kToken:customUserID:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addItem:number:loginName:nickName:vodPassword:loginPassword:downFlag:serType:isBox:oldVersion:kToken:customUserID:">&ndash;&nbsp;addItem:number:loginName:nickName:vodPassword:loginPassword:downFlag:serType:isBox:oldVersion:kToken:customUserID:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>添加到下载</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)addItem:(NSString *)<em>domain</em> number:(NSString *)<em>number</em> loginName:(NSString *)<em>loginName</em> nickName:(NSString *)<em>nickName</em> vodPassword:(NSString *)<em>vodPassword</em> loginPassword:(NSString *)<em>loginPassword</em> downFlag:(int)<em>downFlag</em> serType:(NSString *)<em>serType</em> isBox:(BOOL)<em>isBox</em> oldVersion:(BOOL)<em>oldVersion</em> kToken:(NSString *)<em>token</em> customUserID:(long long)<em>customUserID</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>domain</code></th>
+						<td><p>域名</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>number</code></th>
+						<td><p>编号</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>loginName</code></th>
+						<td><p>登录名</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>nickName</code></th>
+						<td><p>昵称</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>vodPassword</code></th>
+						<td><p>观看密码</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>loginPassword</code></th>
+						<td><p>登录密码</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>downFlag</code></th>
+						<td><p>1:需要下载  0:不需要下载  用于在线播放和下载播放</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>serType</code></th>
+						<td><p>webcast或者training</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>isBox</code></th>
+						<td><p>是否box YES:将不再判断服务器返回的ipad字段 NO:默认为NO,是会判断服务器返回的ipad字段</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>oldVersion</code></th>
+						<td><p>是否用新版本的接口</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>token</code></th>
+						<td><p>第三方验证K值，只有在oldVersion为NO下才会起作用</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>customUser</code></th>
+						<td><p>自定义用户id，无特殊需求直接写0，若需要自定义，则需要大于十亿，否则无效</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>添加到下载</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VodDownLoader.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addItem:number:loginName:vodPassword:loginPassword:downFlag:serType:oldVersion:kToken:customUserID:" title="addItem:number:loginName:vodPassword:loginPassword:downFlag:serType:oldVersion:kToken:customUserID:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addItem:number:loginName:vodPassword:loginPassword:downFlag:serType:oldVersion:kToken:customUserID:">&ndash;&nbsp;addItem:number:loginName:vodPassword:loginPassword:downFlag:serType:oldVersion:kToken:customUserID:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>添加到下载</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)addItem:(NSString *)<em>domain</em> number:(NSString *)<em>number</em> loginName:(NSString *)<em>loginName</em> vodPassword:(NSString *)<em>vodPassword</em> loginPassword:(NSString *)<em>loginPassword</em> downFlag:(int)<em>downFlag</em> serType:(NSString *)<em>serType</em> oldVersion:(BOOL)<em>oldVersion</em> kToken:(NSString *)<em>token</em> customUserID:(long long)<em>customUserID</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>domain</code></th>
+						<td><p>域名</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>number</code></th>
+						<td><p>编号</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>loginName</code></th>
+						<td><p>登录名</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>vodPassword</code></th>
+						<td><p>观看密码</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>loginPassword</code></th>
+						<td><p>登录密码</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>downFlag</code></th>
+						<td><p>1:需要下载  0:不需要下载  用于在线播放和下载播放</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>serType</code></th>
+						<td><p>webcast或者training</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>oldVersion</code></th>
+						<td><p>是否用新版本的接口</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>token</code></th>
+						<td><p>第三方验证K值，只有在oldVersion为NO下才会起作用</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>customUser</code></th>
+						<td><p>自定义用户id，无特殊需求直接写0，若需要自定义，则需要大于十亿，否则无效</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>添加到下载</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VodDownLoader.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addItem:number:loginName:vodPassword:loginPassword:vodid:downFlag:serType:oldVersion:kToken:customUserID:" title="addItem:number:loginName:vodPassword:loginPassword:vodid:downFlag:serType:oldVersion:kToken:customUserID:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addItem:number:loginName:vodPassword:loginPassword:vodid:downFlag:serType:oldVersion:kToken:customUserID:">&ndash;&nbsp;addItem:number:loginName:vodPassword:loginPassword:vodid:downFlag:serType:oldVersion:kToken:customUserID:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>添加到下载</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)addItem:(NSString *)<em>domain</em> number:(NSString *)<em>number</em> loginName:(NSString *)<em>loginName</em> vodPassword:(NSString *)<em>vodPassword</em> loginPassword:(NSString *)<em>loginPassword</em> vodid:(NSString *)<em>vodid</em> downFlag:(int)<em>downFlag</em> serType:(NSString *)<em>serType</em> oldVersion:(BOOL)<em>oldVersion</em> kToken:(NSString *)<em>token</em> customUserID:(long long)<em>customUserID</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>domain</code></th>
+						<td><p>域名</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>number</code></th>
+						<td><p>编号</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>loginName</code></th>
+						<td><p>登录名</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>vodPassword</code></th>
+						<td><p>观看密码</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>loginPassword</code></th>
+						<td><p>登录密码</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>vodid</code></th>
+						<td><p>点播件（录制件）ID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>downFlag</code></th>
+						<td><p>1:需要下载  0:不需要下载  用于在线播放和下载播放</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>serType</code></th>
+						<td><p>webcast或者training</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>oldVersion</code></th>
+						<td><p>是否用新版本的接口</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>token</code></th>
+						<td><p>第三方验证K值，只有在oldVersion为NO下才会起作用</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>customUser</code></th>
+						<td><p>自定义用户id，无特殊需求直接写0，若需要自定义，则需要大于十亿，否则无效</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>添加到下载</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VodDownLoader.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addItemToDataBase:" title="addItemToDataBase:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addItemToDataBase:">&ndash;&nbsp;addItemToDataBase:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>把点播件（录制件）添加到本地数据库</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)addItemToDataBase:(downItem *)<em>item</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>item</code></th>
+						<td><p>点播件（录制件）</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>把点播件（录制件）添加到本地数据库</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VodDownLoader.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/vodDownloadPath:" title="vodDownloadPath:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/vodDownloadPath:">&ndash;&nbsp;vodDownloadPath:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取点播件（录制件）的下载路径</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)vodDownloadPath:(NSString *)<em>downloadID</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>downloadID</code></th>
+						<td><p>点播件（录制件）的ID</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>下载路径</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取点播件（录制件）的下载路径</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VodDownLoader.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/setAutoDownloading:" title="setAutoDownloading:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setAutoDownloading:">&ndash;&nbsp;setAutoDownloading:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>是否支持 自动下载</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setAutoDownloading:(BOOL)<em>autoDownLoad</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>是否支持 自动下载</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VodDownLoader.mm</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isAutoDownloading" title="isAutoDownloading"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isAutoDownloading">&ndash;&nbsp;isAutoDownloading</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取 是否支持 自动下载</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)isAutoDownloading</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取 是否支持 自动下载</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VodDownLoader.mm</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2017 Gensee. All rights reserved. Updated: 2017-02-22</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

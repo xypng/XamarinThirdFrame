@@ -1,0 +1,16 @@
+//
+//  iOSDemoPrefixHeader.pch
+//  iOSDemo
+//
+//  Created by Gaojin Hsu on 10/31/16.
+//  Copyright © 2016 gensee. All rights reserved.
+//
+
+#ifndef iOSDemoPrefixHeader_pch
+#define iOSDemoPrefixHeader_pch
+
+
+
+#define JoinFailed 1000
+
+#endif /* iOSDemoPrefixHeader_pch */

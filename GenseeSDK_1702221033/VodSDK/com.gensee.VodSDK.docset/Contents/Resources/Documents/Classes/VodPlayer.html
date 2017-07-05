@@ -1,0 +1,1840 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>VodPlayer Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">VodSDK </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Gensee</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/delegate">delegate</option>
+		
+		<option value="//api/name/docSwfView">docSwfView</option>
+		
+		<option value="//api/name/gSDocModeType">gSDocModeType</option>
+		
+		<option value="//api/name/mVideoView">mVideoView</option>
+		
+		<option value="//api/name/msDocView">msDocView</option>
+		
+		<option value="//api/name/playItem">playItem</option>
+		
+		<option value="//api/name/vodDocShowView">vodDocShowView</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/OfflinePlay:">- OfflinePlay:</option>
+		
+		<option value="//api/name/OnInit:bHaveVideo:dwTotalLength:CDocumentPageInfo:ndocnum:">- OnInit:bHaveVideo:dwTotalLength:CDocumentPageInfo:ndocnum:</option>
+		
+		<option value="//api/name/OnlinePlay:audioOnly:">- OnlinePlay:audioOnly:</option>
+		
+		<option value="//api/name/SpeedPlay:">- SpeedPlay:</option>
+		
+		<option value="//api/name/addSubViewOnVideoView:">- addSubViewOnVideoView:</option>
+		
+		<option value="//api/name/closeVideo:">- closeVideo:</option>
+		
+		<option value="//api/name/getChatAndQalistAction">- getChatAndQalistAction</option>
+		
+		<option value="//api/name/getChatListWithPageIndex:">- getChatListWithPageIndex:</option>
+		
+		<option value="//api/name/getQaListWithPageIndex:">- getQaListWithPageIndex:</option>
+		
+		<option value="//api/name/init">- init</option>
+		
+		<option value="//api/name/onAnnotaion:strAnnoXML:">- onAnnotaion:strAnnoXML:</option>
+		
+		<option value="//api/name/onAudio:data:dwLen:nLevel:">- onAudio:data:dwLen:nLevel:</option>
+		
+		<option value="//api/name/onPage:data:dwLen:dwPageW:dwPageH:">- onPage:data:dwLen:dwPageW:dwPageH:</option>
+		
+		<option value="//api/name/onPage:data:dwLen:dwPageW:dwPageH:strAnimations:">- onPage:data:dwLen:dwPageW:dwPageH:strAnimations:</option>
+		
+		<option value="//api/name/onVideo:data:dwLen:">- onVideo:data:dwLen:</option>
+		
+		<option value="//api/name/onVideoParam:dwHeight:dwWidth:bRealSize:">- onVideoParam:dwHeight:dwWidth:bRealSize:</option>
+		
+		<option value="//api/name/pause">- pause</option>
+		
+		<option value="//api/name/reconnect">- reconnect</option>
+		
+		<option value="//api/name/resetAudioPlayer">- resetAudioPlayer</option>
+		
+		<option value="//api/name/resume">- resume</option>
+		
+		<option value="//api/name/seekTo:">- seekTo:</option>
+		
+		<option value="//api/name/stop">- stop</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">VodPlayer Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>VodPlayer.h<br />VodPlayer.mm</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>VodPlayer是管理播放点播件（录制件）的类</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/delegate" title="delegate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/delegate">&nbsp;&nbsp;delegate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>VodPlayDelegate代理</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, weak) id&lt;VodPlayDelegate&gt; delegate</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>VodPlayDelegate代理</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VodPlayer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/mVideoView" title="mVideoView"></a>
+	<h3 class="method-title"><code><a href="#//api/name/mVideoView">&nbsp;&nbsp;mVideoView</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>播放视频的View</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) VodGLView *mVideoView</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>播放视频的View</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VodPlayer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/docSwfView" title="docSwfView"></a>
+	<h3 class="method-title"><code><a href="#//api/name/docSwfView">&nbsp;&nbsp;docSwfView</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>显示SWF文档的View，默认为SWF文档</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) GSVodDocView *docSwfView</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>显示SWF文档的View，默认为SWF文档</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VodPlayer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/vodDocShowView" title="vodDocShowView"></a>
+	<h3 class="method-title"><code><a href="#//api/name/vodDocShowView">&nbsp;&nbsp;vodDocShowView</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>**</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) UIView *vodDocShowView</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>**</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VodPlayer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/playItem" title="playItem"></a>
+	<h3 class="method-title"><code><a href="#//api/name/playItem">&nbsp;&nbsp;playItem</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>播放的点播项</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) downItem *playItem</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>播放的点播项</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VodPlayer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/gSDocModeType" title="gSDocModeType"></a>
+	<h3 class="method-title"><code><a href="#//api/name/gSDocModeType">&nbsp;&nbsp;gSDocModeType</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>设置文档文档的显示类型</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (assign, nonatomic) GSVodDocShowType gSDocModeType</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>设置文档文档的显示类型</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VodPlayer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/init" title="init"></a>
+	<h3 class="method-title"><code><a href="#//api/name/init">&ndash;&nbsp;init</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>默认初始化</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id)init</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>vodPlayer实例</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>默认初始化</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VodPlayer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/reconnect" title="reconnect"></a>
+	<h3 class="method-title"><code><a href="#//api/name/reconnect">&ndash;&nbsp;reconnect</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>在检测到3g/4g/wifi 切换时主调调用此方法发起重连</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)reconnect</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>在检测到3g/4g/wifi 切换时主调调用此方法发起重连</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VodPlayer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/OfflinePlay:" title="OfflinePlay:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/OfflinePlay:">&ndash;&nbsp;OfflinePlay:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>离线播放</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)OfflinePlay:(BOOL)<em>postChat</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>postChat</code></th>
+						<td><p>是否按照时间顺序依次推送聊天</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>离线播放</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VodPlayer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/OnlinePlay:audioOnly:" title="OnlinePlay:audioOnly:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/OnlinePlay:audioOnly:">&ndash;&nbsp;OnlinePlay:audioOnly:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>在线播放</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)OnlinePlay:(BOOL)<em>postChat</em> audioOnly:(BOOL)<em>audioOnly</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>postChat</code></th>
+						<td><p>是否按照时间顺序依次推送聊天</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>audioOnly</code></th>
+						<td><p>YES将不会下载视频，只播放声音</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>在线播放</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VodPlayer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/SpeedPlay:" title="SpeedPlay:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/SpeedPlay:">&ndash;&nbsp;SpeedPlay:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>加速播放点播</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)SpeedPlay:(SpeedValue)<em>value</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>value</code></th>
+						<td><p>播放速度</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>加速播放点播</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VodPlayer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/closeVideo:" title="closeVideo:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/closeVideo:">&ndash;&nbsp;closeVideo:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>开关视频</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)closeVideo:(BOOL)<em>close</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>close</code></th>
+						<td><p>开关视频</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>开关视频</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VodPlayer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/pause" title="pause"></a>
+	<h3 class="method-title"><code><a href="#//api/name/pause">&ndash;&nbsp;pause</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>暂停</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)pause</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>暂停</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VodPlayer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/resume" title="resume"></a>
+	<h3 class="method-title"><code><a href="#//api/name/resume">&ndash;&nbsp;resume</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>恢复</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)resume</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>恢复</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VodPlayer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/stop" title="stop"></a>
+	<h3 class="method-title"><code><a href="#//api/name/stop">&ndash;&nbsp;stop</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>停止</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)stop</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>停止</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VodPlayer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/seekTo:" title="seekTo:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/seekTo:">&ndash;&nbsp;seekTo:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>从当前位置开始播放</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)seekTo:(int)<em>position</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>position</code></th>
+						<td><p>播放的位置</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>结果是否成功，O表示成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>从当前位置开始播放</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VodPlayer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addSubViewOnVideoView:" title="addSubViewOnVideoView:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addSubViewOnVideoView:">&ndash;&nbsp;addSubViewOnVideoView:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>在视频窗口添加控件</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)addSubViewOnVideoView:(id)<em>subView</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>在视频窗口添加控件</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VodPlayer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getChatAndQalistAction" title="getChatAndQalistAction"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getChatAndQalistAction">&ndash;&nbsp;getChatAndQalistAction</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取问答列表和聊天列表</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getChatAndQalistAction</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取问答列表和聊天列表</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VodPlayer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getChatListWithPageIndex:" title="getChatListWithPageIndex:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getChatListWithPageIndex:">&ndash;&nbsp;getChatListWithPageIndex:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取聊天，一次最多两百条</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getChatListWithPageIndex:(int)<em>pageIndex</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>pageIndex</code></th>
+						<td><p>当前页索引</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取聊天，一次最多两百条</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VodPlayer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getQaListWithPageIndex:" title="getQaListWithPageIndex:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getQaListWithPageIndex:">&ndash;&nbsp;getQaListWithPageIndex:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取聊天，一次最多两百条</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getQaListWithPageIndex:(int)<em>pageIndex</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>pageIndex</code></th>
+						<td><p>当前页索引</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取聊天，一次最多两百条</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VodPlayer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/resetAudioPlayer" title="resetAudioPlayer"></a>
+	<h3 class="method-title"><code><a href="#//api/name/resetAudioPlayer">&ndash;&nbsp;resetAudioPlayer</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>重设音频播放器，在程序重新被激活时调用</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)resetAudioPlayer</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>重设音频播放器，在程序重新被激活时调用</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VodPlayer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/onAnnotaion:strAnnoXML:" title="onAnnotaion:strAnnoXML:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/onAnnotaion:strAnnoXML:">&ndash;&nbsp;onAnnotaion:strAnnoXML:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>文档标注</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)onAnnotaion:(DWORD)<em>dwTimeStamp</em> strAnnoXML:(NSString *)<em>strAnnoXML</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>dwTimeStamp</code></th>
+						<td><p>时间错</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>strAnnoXML</code></th>
+						<td><p>待解析的标注串</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>文档标注</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VodPlayer.mm</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/onPage:data:dwLen:dwPageW:dwPageH:" title="onPage:data:dwLen:dwPageW:dwPageH:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/onPage:data:dwLen:dwPageW:dwPageH:">&ndash;&nbsp;onPage:data:dwLen:dwPageW:dwPageH:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>翻页文档信息</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)onPage:(DWORD)<em>dwTimeStamp</em> data:(const BYTE *)<em>data</em> dwLen:(DWORD)<em>dwLen</em> dwPageW:(DWORD)<em>dwPageW</em> dwPageH:(DWORD)<em>dwPageH</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>dwTimeStamp</code></th>
+						<td><p>翻页的时间</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>data</code></th>
+						<td><p>文档数据</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>dwLen</code></th>
+						<td><p>文档数据长度</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>dwPageW</code></th>
+						<td><p>文档宽度</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>dwPageH</code></th>
+						<td><p>文档高度</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>翻页文档信息</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VodPlayer.mm</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/onPage:data:dwLen:dwPageW:dwPageH:strAnimations:" title="onPage:data:dwLen:dwPageW:dwPageH:strAnimations:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/onPage:data:dwLen:dwPageW:dwPageH:strAnimations:">&ndash;&nbsp;onPage:data:dwLen:dwPageW:dwPageH:strAnimations:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>翻页文档信息 SWF  文档动画接口</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)onPage:(DWORD)<em>dwTimeStamp</em> data:(const BYTE *)<em>data</em> dwLen:(DWORD)<em>dwLen</em> dwPageW:(DWORD)<em>dwPageW</em> dwPageH:(DWORD)<em>dwPageH</em> strAnimations:(NSString *)<em>strAnimations</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>dwTimeStamp</code></th>
+						<td><p>翻页的时间</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>data</code></th>
+						<td><p>文档数据</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>dwLen</code></th>
+						<td><p>文档数据长度</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>dwPageW</code></th>
+						<td><p>文档宽度</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>dwPageH</code></th>
+						<td><p>文档高度</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>strAnimations</code></th>
+						<td><p>文档动画文件</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>翻页文档信息 SWF  文档动画接口</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VodPlayer.mm</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/onVideoParam:dwHeight:dwWidth:bRealSize:" title="onVideoParam:dwHeight:dwWidth:bRealSize:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/onVideoParam:dwHeight:dwWidth:bRealSize:">&ndash;&nbsp;onVideoParam:dwHeight:dwWidth:bRealSize:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>视频参数信息</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)onVideoParam:(DWORD)<em>dwTimeStamp</em> dwHeight:(DWORD)<em>dwHeight</em> dwWidth:(DWORD)<em>dwWidth</em> bRealSize:(BOOL)<em>bRealSize</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>dwTimeStamp</code></th>
+						<td><p>视频时间</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>dwHeight</code></th>
+						<td><p>视频的高度</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>dwWidth</code></th>
+						<td><p>视频的宽度</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>视频参数信息</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VodPlayer.mm</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/onVideo:data:dwLen:" title="onVideo:data:dwLen:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/onVideo:data:dwLen:">&ndash;&nbsp;onVideo:data:dwLen:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>视频数据</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)onVideo:(DWORD)<em>dwTimeStamp</em> data:(const BYTE *)<em>data</em> dwLen:(DWORD)<em>dwLen</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>dwTimeStamp</code></th>
+						<td><p>视频时间</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>data</code></th>
+						<td><p>视频数据</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>dwLen</code></th>
+						<td><p>视频数据长度</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>视频数据</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VodPlayer.mm</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/onAudio:data:dwLen:nLevel:" title="onAudio:data:dwLen:nLevel:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/onAudio:data:dwLen:nLevel:">&ndash;&nbsp;onAudio:data:dwLen:nLevel:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>音频数据</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)onAudio:(DWORD)<em>dwTimeStamp</em> data:(const BYTE *)<em>data</em> dwLen:(DWORD)<em>dwLen</em> nLevel:(WORD)<em>nLevel</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>dwTimeStamp</code></th>
+						<td><p>音频的时间</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>data</code></th>
+						<td><p>音频的数据</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>dwLen</code></th>
+						<td><p>音频的数据长度</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>nLevel</code></th>
+						<td><p>音量的大小</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>音频数据</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VodPlayer.mm</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/OnInit:bHaveVideo:dwTotalLength:CDocumentPageInfo:ndocnum:" title="OnInit:bHaveVideo:dwTotalLength:CDocumentPageInfo:ndocnum:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/OnInit:bHaveVideo:dwTotalLength:CDocumentPageInfo:ndocnum:">&ndash;&nbsp;OnInit:bHaveVideo:dwTotalLength:CDocumentPageInfo:ndocnum:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>初始化信息</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)OnInit:(int)<em>nResult</em> bHaveVideo:(BOOL)<em>bHaveVideo</em> dwTotalLength:(DWORD)<em>dwTotalLength</em> CDocumentPageInfo:(const CDocumentPageInfo *)<em>docinfo</em> ndocnum:(int)<em>ndocnum</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>nResult</code></th>
+						<td><p>返回类型</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>bHaveVideo</code></th>
+						<td><p>是否有视频</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>dwTotalLength</code></th>
+						<td><p>总的长度</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>ndocnum</code></th>
+						<td><p>文档数量</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>CDocumentPageInfo</code></th>
+						<td><p>文档信息</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>初始化信息</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VodPlayer.mm</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Extension Methods" name="task_Extension Methods"></a>
+						<h2 class="task-title">Extension Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/msDocView" title="msDocView"></a>
+	<h3 class="method-title"><code><a href="#//api/name/msDocView">&nbsp;&nbsp;msDocView</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>显示文档的View</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) UIImageView *msDocView</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>显示文档的View</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">VodPlayer.mm</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2017 Gensee. All rights reserved. Updated: 2017-02-22</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

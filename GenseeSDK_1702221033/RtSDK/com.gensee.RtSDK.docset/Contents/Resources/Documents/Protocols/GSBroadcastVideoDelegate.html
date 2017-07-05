@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>GSBroadcastVideoDelegate Protocol Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">RtSDK </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Gensee</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/broadcastManager:didDisplayVideo:">- broadcastManager:didDisplayVideo:</option>
+		
+		<option value="//api/name/broadcastManager:didReceiveVideoModuleInitResult:">- broadcastManager:didReceiveVideoModuleInitResult:</option>
+		
+		<option value="//api/name/broadcastManager:didSetVideo:active:">- broadcastManager:didSetVideo:active:</option>
+		
+		<option value="//api/name/broadcastManager:didUndisplayVideo:">- broadcastManager:didUndisplayVideo:</option>
+		
+		<option value="//api/name/broadcastManager:didUserJoinVideo:">- broadcastManager:didUserJoinVideo:</option>
+		
+		<option value="//api/name/broadcastManager:didUserQuitVideo:">- broadcastManager:didUserQuitVideo:</option>
+		
+		<option value="//api/name/broadcastManager:isCameraAvailable:">- broadcastManager:isCameraAvailable:</option>
+		
+		<option value="//api/name/broadcastManager:userID:renderVideoFrame:">- broadcastManager:userID:renderVideoFrame:</option>
+		
+		<option value="//api/name/broadcastManagerDidActivateCamera:">- broadcastManagerDidActivateCamera:</option>
+		
+		<option value="//api/name/broadcastManagerDidInactivateCamera:">- broadcastManagerDidInactivateCamera:</option>
+		
+		<option value="//api/name/broadcastManagerDidStartCaptureVideo:">- broadcastManagerDidStartCaptureVideo:</option>
+		
+		<option value="//api/name/broadcastManagerDidStopCaptureVideo:">- broadcastManagerDidStopCaptureVideo:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">GSBroadcastVideoDelegate Protocol Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Conforms to</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>GSBroadcastVideoDelegate.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>直播视频代理，接受直播视频信息回调</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/broadcastManager:didReceiveVideoModuleInitResult:" title="broadcastManager:didReceiveVideoModuleInitResult:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/broadcastManager:didReceiveVideoModuleInitResult:">&ndash;&nbsp;broadcastManager:didReceiveVideoModuleInitResult:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>视频模块初始化反馈代理</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)broadcastManager:(GSBroadcastManager *)<em>manager</em> didReceiveVideoModuleInitResult:(BOOL)<em>result</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>manager</code></th>
+						<td><p>触发此代理的GSBroadcastManager对象</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>result</code></th>
+						<td><p>布尔值表示初始化结果，YES表示成功</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>视频模块初始化反馈代理</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/GSBroadcastManager.html">GSBroadcastManager</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSBroadcastVideoDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/broadcastManager:userID:renderVideoFrame:" title="broadcastManager:userID:renderVideoFrame:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/broadcastManager:userID:renderVideoFrame:">&ndash;&nbsp;broadcastManager:userID:renderVideoFrame:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>摄像头或插播视频每一帧的数据代理</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)broadcastManager:(GSBroadcastManager *)<em>manager</em> userID:(long long)<em>userID</em> renderVideoFrame:(GSVideoFrame *)<em>videoFrame</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>manager</code></th>
+						<td><p>触发此代理的GSBroadcastManager对象</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userID</code></th>
+						<td><p>表示这一帧视频数据是从该用户哪里发送过来的</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>videoFrame</code></th>
+						<td><p>一帧视频数据</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>摄像头或插播视频每一帧的数据代理</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/GSBroadcastManager.html">GSBroadcastManager</a></p></code></li>
+					
+					<li><code><p><a href="../Classes/GSVideoFrame.html">GSVideoFrame</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSBroadcastVideoDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/broadcastManager:didUserJoinVideo:" title="broadcastManager:didUserJoinVideo:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/broadcastManager:didUserJoinVideo:">&ndash;&nbsp;broadcastManager:didUserJoinVideo:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>某个用户加入视频</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)broadcastManager:(GSBroadcastManager *)<em>manager</em> didUserJoinVideo:(GSUserInfo *)<em>userInfo</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>manager</code></th>
+						<td><p>触发此代理的GSBroadcastManager对象</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userInfo</code></th>
+						<td><p>用户信息</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>某个用户加入视频</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/GSBroadcastManager.html">GSBroadcastManager</a></p></code></li>
+					
+					<li><code><p><a href="../Classes/GSUserInfo.html">GSUserInfo</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSBroadcastVideoDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/broadcastManager:didUserQuitVideo:" title="broadcastManager:didUserQuitVideo:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/broadcastManager:didUserQuitVideo:">&ndash;&nbsp;broadcastManager:didUserQuitVideo:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>某个用户退出视频</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)broadcastManager:(GSBroadcastManager *)<em>manager</em> didUserQuitVideo:(long long)<em>userID</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>manager</code></th>
+						<td><p>触发此代理的GSBroadcastManager对象</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userID</code></th>
+						<td><p>退出用户的ID</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>某个用户退出视频</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/GSBroadcastManager.html">GSBroadcastManager</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSBroadcastVideoDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/broadcastManager:isCameraAvailable:" title="broadcastManager:isCameraAvailable:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/broadcastManager:isCameraAvailable:">&ndash;&nbsp;broadcastManager:isCameraAvailable:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>摄像头是否可用代理</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)broadcastManager:(GSBroadcastManager *)<em>manager</em> isCameraAvailable:(BOOL)<em>isAvailable</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>manager</code></th>
+						<td><p>触发此代理的GSBroadcastManager对象</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>isAvailable</code></th>
+						<td><p>布尔值表示摄像头是否可用，YES表示可用</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>摄像头是否可用代理</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/GSBroadcastManager.html">GSBroadcastManager</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSBroadcastVideoDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/broadcastManagerDidActivateCamera:" title="broadcastManagerDidActivateCamera:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/broadcastManagerDidActivateCamera:">&ndash;&nbsp;broadcastManagerDidActivateCamera:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>摄像头打开代理</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)broadcastManagerDidActivateCamera:(GSBroadcastManager *)<em>manager</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>manager</code></th>
+						<td><p>触发此代理的GSBroadcastManager对象</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>摄像头打开代理</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/GSBroadcastManager.html">GSBroadcastManager</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSBroadcastVideoDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/broadcastManagerDidInactivateCamera:" title="broadcastManagerDidInactivateCamera:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/broadcastManagerDidInactivateCamera:">&ndash;&nbsp;broadcastManagerDidInactivateCamera:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>摄像头关闭代理</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)broadcastManagerDidInactivateCamera:(GSBroadcastManager *)<em>manager</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>manager</code></th>
+						<td><p>触发此代理的GSBroadcastManager对象</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>摄像头关闭代理</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/GSBroadcastManager.html">GSBroadcastManager</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSBroadcastVideoDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/broadcastManager:didDisplayVideo:" title="broadcastManager:didDisplayVideo:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/broadcastManager:didDisplayVideo:">&ndash;&nbsp;broadcastManager:didDisplayVideo:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>摄像头或插播视频播放代理</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)broadcastManager:(GSBroadcastManager *)<em>manager</em> didDisplayVideo:(GSUserInfo *)<em>userInfo</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>manager</code></th>
+						<td><p>触发此代理的GSBroadcastManager对象</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userInfo</code></th>
+						<td><p>视频所属用户的用户信息</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>摄像头或插播视频播放代理</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/GSBroadcastManager.html">GSBroadcastManager</a></p></code></li>
+					
+					<li><code><p><a href="../Classes/GSUserInfo.html">GSUserInfo</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSBroadcastVideoDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/broadcastManager:didUndisplayVideo:" title="broadcastManager:didUndisplayVideo:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/broadcastManager:didUndisplayVideo:">&ndash;&nbsp;broadcastManager:didUndisplayVideo:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>摄像头或插播视频关闭播放代理</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)broadcastManager:(GSBroadcastManager *)<em>manager</em> didUndisplayVideo:(long long)<em>userID</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>manager</code></th>
+						<td><p>触发此代理的GSBroadcastManager对象</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userID</code></th>
+						<td><p>视频所属用户的ID</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>摄像头或插播视频关闭播放代理</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/GSBroadcastManager.html">GSBroadcastManager</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSBroadcastVideoDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/broadcastManager:didSetVideo:active:" title="broadcastManager:didSetVideo:active:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/broadcastManager:didSetVideo:active:">&ndash;&nbsp;broadcastManager:didSetVideo:active:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>设置某一路摄像头或插播视频的激活状态代理</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)broadcastManager:(GSBroadcastManager *)<em>manager</em> didSetVideo:(GSUserInfo *)<em>userInfo</em> active:(BOOL)<em>active</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>manager</code></th>
+						<td><p>触发此代理的GSBroadcastManager对象</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userInfo</code></th>
+						<td><p>激活视频所属用户的用户信息</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>active</code></th>
+						<td><p>布尔值表示是否激活，YES表示激活</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>设置某一路摄像头或插播视频的激活状态代理</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/GSBroadcastManager.html">GSBroadcastManager</a></p></code></li>
+					
+					<li><code><p><a href="../Classes/GSUserInfo.html">GSUserInfo</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSBroadcastVideoDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/broadcastManagerDidStartCaptureVideo:" title="broadcastManagerDidStartCaptureVideo:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/broadcastManagerDidStartCaptureVideo:">&ndash;&nbsp;broadcastManagerDidStartCaptureVideo:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>手机摄像头开始采集数据</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)broadcastManagerDidStartCaptureVideo:(GSBroadcastManager *)<em>manager</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>manager</code></th>
+						<td><p>触发此代理的GSBroadcastManager对象</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>手机摄像头开始采集数据</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSBroadcastVideoDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/broadcastManagerDidStopCaptureVideo:" title="broadcastManagerDidStopCaptureVideo:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/broadcastManagerDidStopCaptureVideo:">&ndash;&nbsp;broadcastManagerDidStopCaptureVideo:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>手机摄像头停止采集数据</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)broadcastManagerDidStopCaptureVideo:(GSBroadcastManager *)<em>manager</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>manager</code></th>
+						<td><p>触发此代理的GSBroadcastManager对象</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>手机摄像头停止采集数据</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSBroadcastVideoDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2017 Gensee. All rights reserved. Updated: 2017-02-22</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

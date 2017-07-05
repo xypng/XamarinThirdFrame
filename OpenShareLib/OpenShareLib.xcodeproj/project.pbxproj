@@ -1,0 +1,298 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AE7EEA641E8A00110056C933 /* OpenShare.m in Sources */ = {isa = PBXBuildFile; fileRef = AE7EEA581E8A00110056C933 /* OpenShare.m */; };
+		AE7EEA651E8A00110056C933 /* OpenShare+Alipay.m in Sources */ = {isa = PBXBuildFile; fileRef = AE7EEA5A1E8A00110056C933 /* OpenShare+Alipay.m */; };
+		AE7EEA661E8A00110056C933 /* OpenShare+QQ.m in Sources */ = {isa = PBXBuildFile; fileRef = AE7EEA5C1E8A00110056C933 /* OpenShare+QQ.m */; };
+		AE7EEA671E8A00110056C933 /* OpenShare+Renren.m in Sources */ = {isa = PBXBuildFile; fileRef = AE7EEA5E1E8A00110056C933 /* OpenShare+Renren.m */; };
+		AE7EEA681E8A00110056C933 /* OpenShare+Weibo.m in Sources */ = {isa = PBXBuildFile; fileRef = AE7EEA601E8A00110056C933 /* OpenShare+Weibo.m */; };
+		AE7EEA691E8A00110056C933 /* OpenShare+Weixin.m in Sources */ = {isa = PBXBuildFile; fileRef = AE7EEA621E8A00110056C933 /* OpenShare+Weixin.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AE7EEA361E89F9300056C933 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AE7EEA381E89F9300056C933 /* libOpenShareLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libOpenShareLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE7EEA571E8A00110056C933 /* OpenShare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenShare.h; sourceTree = "<group>"; };
+		AE7EEA581E8A00110056C933 /* OpenShare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenShare.m; sourceTree = "<group>"; };
+		AE7EEA591E8A00110056C933 /* OpenShare+Alipay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OpenShare+Alipay.h"; sourceTree = "<group>"; };
+		AE7EEA5A1E8A00110056C933 /* OpenShare+Alipay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OpenShare+Alipay.m"; sourceTree = "<group>"; };
+		AE7EEA5B1E8A00110056C933 /* OpenShare+QQ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OpenShare+QQ.h"; sourceTree = "<group>"; };
+		AE7EEA5C1E8A00110056C933 /* OpenShare+QQ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OpenShare+QQ.m"; sourceTree = "<group>"; };
+		AE7EEA5D1E8A00110056C933 /* OpenShare+Renren.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OpenShare+Renren.h"; sourceTree = "<group>"; };
+		AE7EEA5E1E8A00110056C933 /* OpenShare+Renren.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OpenShare+Renren.m"; sourceTree = "<group>"; };
+		AE7EEA5F1E8A00110056C933 /* OpenShare+Weibo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OpenShare+Weibo.h"; sourceTree = "<group>"; };
+		AE7EEA601E8A00110056C933 /* OpenShare+Weibo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OpenShare+Weibo.m"; sourceTree = "<group>"; };
+		AE7EEA611E8A00110056C933 /* OpenShare+Weixin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OpenShare+Weixin.h"; sourceTree = "<group>"; };
+		AE7EEA621E8A00110056C933 /* OpenShare+Weixin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OpenShare+Weixin.m"; sourceTree = "<group>"; };
+		AE7EEA631E8A00110056C933 /* OpenShareHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenShareHeader.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE7EEA351E89F9300056C933 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AE7EEA2F1E89F9300056C933 = {
+			isa = PBXGroup;
+			children = (
+				AE7EEA3A1E89F9300056C933 /* OpenShareLib */,
+				AE7EEA391E89F9300056C933 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AE7EEA391E89F9300056C933 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE7EEA381E89F9300056C933 /* libOpenShareLib.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE7EEA3A1E89F9300056C933 /* OpenShareLib */ = {
+			isa = PBXGroup;
+			children = (
+				AE7EEA571E8A00110056C933 /* OpenShare.h */,
+				AE7EEA581E8A00110056C933 /* OpenShare.m */,
+				AE7EEA591E8A00110056C933 /* OpenShare+Alipay.h */,
+				AE7EEA5A1E8A00110056C933 /* OpenShare+Alipay.m */,
+				AE7EEA5B1E8A00110056C933 /* OpenShare+QQ.h */,
+				AE7EEA5C1E8A00110056C933 /* OpenShare+QQ.m */,
+				AE7EEA5D1E8A00110056C933 /* OpenShare+Renren.h */,
+				AE7EEA5E1E8A00110056C933 /* OpenShare+Renren.m */,
+				AE7EEA5F1E8A00110056C933 /* OpenShare+Weibo.h */,
+				AE7EEA601E8A00110056C933 /* OpenShare+Weibo.m */,
+				AE7EEA611E8A00110056C933 /* OpenShare+Weixin.h */,
+				AE7EEA621E8A00110056C933 /* OpenShare+Weixin.m */,
+				AE7EEA631E8A00110056C933 /* OpenShareHeader.h */,
+			);
+			path = OpenShareLib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE7EEA371E89F9300056C933 /* OpenShareLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE7EEA411E89F9300056C933 /* Build configuration list for PBXNativeTarget "OpenShareLib" */;
+			buildPhases = (
+				AE7EEA341E89F9300056C933 /* Sources */,
+				AE7EEA351E89F9300056C933 /* Frameworks */,
+				AE7EEA361E89F9300056C933 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenShareLib;
+			productName = OpenShareLib;
+			productReference = AE7EEA381E89F9300056C933 /* libOpenShareLib.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE7EEA301E89F9300056C933 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = XiaoYiPeng;
+				TargetAttributes = {
+					AE7EEA371E89F9300056C933 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 3F97CAK27B;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = AE7EEA331E89F9300056C933 /* Build configuration list for PBXProject "OpenShareLib" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AE7EEA2F1E89F9300056C933;
+			productRefGroup = AE7EEA391E89F9300056C933 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE7EEA371E89F9300056C933 /* OpenShareLib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE7EEA341E89F9300056C933 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE7EEA661E8A00110056C933 /* OpenShare+QQ.m in Sources */,
+				AE7EEA691E8A00110056C933 /* OpenShare+Weixin.m in Sources */,
+				AE7EEA641E8A00110056C933 /* OpenShare.m in Sources */,
+				AE7EEA651E8A00110056C933 /* OpenShare+Alipay.m in Sources */,
+				AE7EEA671E8A00110056C933 /* OpenShare+Renren.m in Sources */,
+				AE7EEA681E8A00110056C933 /* OpenShare+Weibo.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AE7EEA3F1E89F9300056C933 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AE7EEA401E89F9300056C933 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AE7EEA421E89F9300056C933 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 3F97CAK27B;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		AE7EEA431E89F9300056C933 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 3F97CAK27B;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE7EEA331E89F9300056C933 /* Build configuration list for PBXProject "OpenShareLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE7EEA3F1E89F9300056C933 /* Debug */,
+				AE7EEA401E89F9300056C933 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE7EEA411E89F9300056C933 /* Build configuration list for PBXNativeTarget "OpenShareLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE7EEA421E89F9300056C933 /* Debug */,
+				AE7EEA431E89F9300056C933 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AE7EEA301E89F9300056C933 /* Project object */;
+}

@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>GSBroadcastInvestigationDelegate Protocol Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">RtSDK </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Gensee</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/broadcastManager:didAddNewInvestigation:">- broadcastManager:didAddNewInvestigation:</option>
+		
+		<option value="//api/name/broadcastManager:didOnCardPublish:type:">- broadcastManager:didOnCardPublish:type:</option>
+		
+		<option value="//api/name/broadcastManager:didOnCardResultPublish:type:totalSubmitted:">- broadcastManager:didOnCardResultPublish:type:totalSubmitted:</option>
+		
+		<option value="//api/name/broadcastManager:didOnCardSubmit:userId:">- broadcastManager:didOnCardSubmit:userId:</option>
+		
+		<option value="//api/name/broadcastManager:didPostInvestigationURL:">- broadcastManager:didPostInvestigationURL:</option>
+		
+		<option value="//api/name/broadcastManager:didPublishInvestigation:">- broadcastManager:didPublishInvestigation:</option>
+		
+		<option value="//api/name/broadcastManager:didPublishInvestigationResult:">- broadcastManager:didPublishInvestigationResult:</option>
+		
+		<option value="//api/name/broadcastManager:didReceiveInvestigationModuleInitResult:">- broadcastManager:didReceiveInvestigationModuleInitResult:</option>
+		
+		<option value="//api/name/broadcastManager:didRemoveInvestigation:">- broadcastManager:didRemoveInvestigation:</option>
+		
+		<option value="//api/name/broadcastManager:didSubmitInvestigation:">- broadcastManager:didSubmitInvestigation:</option>
+		
+		<option value="//api/name/broadcastManager:didTerminateInvestigation:">- broadcastManager:didTerminateInvestigation:</option>
+		
+		<option value="//api/name/broadcastManager_didOnCardEnd:">- broadcastManager_didOnCardEnd:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">GSBroadcastInvestigationDelegate Protocol Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Conforms to</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>GSBroadcastInvestigationDelegate.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>直播问卷调查代理，接受直播中问卷调查信息的回调</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/broadcastManager:didReceiveInvestigationModuleInitResult:" title="broadcastManager:didReceiveInvestigationModuleInitResult:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/broadcastManager:didReceiveInvestigationModuleInitResult:">&ndash;&nbsp;broadcastManager:didReceiveInvestigationModuleInitResult:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>问卷调查模块初始化结果反馈代理</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)broadcastManager:(GSBroadcastManager *)<em>broadcastManager</em> didReceiveInvestigationModuleInitResult:(BOOL)<em>result</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>broadcastManager</code></th>
+						<td><p>触发此代理的GSBroadcastManager对象</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>result</code></th>
+						<td><p>布尔值表示初始化是否成功， YES表示成功</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>问卷调查模块初始化结果反馈代理</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/GSBroadcastManager.html">GSBroadcastManager</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSBroadcastInvestigationDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/broadcastManager:didAddNewInvestigation:" title="broadcastManager:didAddNewInvestigation:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/broadcastManager:didAddNewInvestigation:">&ndash;&nbsp;broadcastManager:didAddNewInvestigation:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>添加问卷调查代理</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)broadcastManager:(GSBroadcastManager *)<em>broadcastManager</em> didAddNewInvestigation:(GSInvestigation *)<em>investigation</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>broadcastManager</code></th>
+						<td><p>触发此代理的GSBroadcastManager对象</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>investigation</code></th>
+						<td><p>添加的问卷调查对象</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>添加问卷调查代理</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/GSBroadcastManager.html">GSBroadcastManager</a></p></code></li>
+					
+					<li><code><p><a href="../Classes/GSInvestigation.html">GSInvestigation</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSBroadcastInvestigationDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/broadcastManager:didRemoveInvestigation:" title="broadcastManager:didRemoveInvestigation:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/broadcastManager:didRemoveInvestigation:">&ndash;&nbsp;broadcastManager:didRemoveInvestigation:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>删除一项问卷调查</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)broadcastManager:(GSBroadcastManager *)<em>broadcastManager</em> didRemoveInvestigation:(GSInvestigation *)<em>investigation</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>broadcastManager</code></th>
+						<td><p>触发此代理的GSBroadcastManager对象</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>investigation</code></th>
+						<td><p>删除的问卷调查对象</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>删除一项问卷调查</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/GSBroadcastManager.html">GSBroadcastManager</a></p></code></li>
+					
+					<li><code><p><a href="../Classes/GSInvestigation.html">GSInvestigation</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSBroadcastInvestigationDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/broadcastManager:didPublishInvestigation:" title="broadcastManager:didPublishInvestigation:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/broadcastManager:didPublishInvestigation:">&ndash;&nbsp;broadcastManager:didPublishInvestigation:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>发布一项问卷调查</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)broadcastManager:(GSBroadcastManager *)<em>broadcastManager</em> didPublishInvestigation:(GSInvestigation *)<em>investigation</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>broadcastManager</code></th>
+						<td><p>触发此代理的GSBroadcastManager对象</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>investigation</code></th>
+						<td><p>发布的问卷调查对象</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>发布一项问卷调查</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/GSBroadcastManager.html">GSBroadcastManager</a></p></code></li>
+					
+					<li><code><p><a href="../Classes/GSInvestigation.html">GSInvestigation</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSBroadcastInvestigationDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/broadcastManager:didPublishInvestigationResult:" title="broadcastManager:didPublishInvestigationResult:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/broadcastManager:didPublishInvestigationResult:">&ndash;&nbsp;broadcastManager:didPublishInvestigationResult:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>公布一项问卷调查的结果</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)broadcastManager:(GSBroadcastManager *)<em>broadcastManager</em> didPublishInvestigationResult:(GSInvestigation *)<em>investigation</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>broadcastManager</code></th>
+						<td><p>触发此代理的GSBroadcastManager对象</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>investigation</code></th>
+						<td><p>公布了结果的问卷调查对象</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>公布一项问卷调查的结果</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/GSBroadcastManager.html">GSBroadcastManager</a></p></code></li>
+					
+					<li><code><p><a href="../Classes/GSInvestigation.html">GSInvestigation</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSBroadcastInvestigationDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/broadcastManager:didSubmitInvestigation:" title="broadcastManager:didSubmitInvestigation:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/broadcastManager:didSubmitInvestigation:">&ndash;&nbsp;broadcastManager:didSubmitInvestigation:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>提交一项问卷调查</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)broadcastManager:(GSBroadcastManager *)<em>broadcastManager</em> didSubmitInvestigation:(GSInvestigation *)<em>investigation</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>broadcastManager</code></th>
+						<td><p>触发此代理的GSBroadcastManager对象</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>investigation</code></th>
+						<td><p>提交的问卷调查对象</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>提交一项问卷调查</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/GSBroadcastManager.html">GSBroadcastManager</a></p></code></li>
+					
+					<li><code><p><a href="../Classes/GSInvestigation.html">GSInvestigation</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSBroadcastInvestigationDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/broadcastManager:didTerminateInvestigation:" title="broadcastManager:didTerminateInvestigation:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/broadcastManager:didTerminateInvestigation:">&ndash;&nbsp;broadcastManager:didTerminateInvestigation:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>问卷调查截止</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)broadcastManager:(GSBroadcastManager *)<em>broadcastManager</em> didTerminateInvestigation:(GSInvestigation *)<em>investigation</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>broadcastManager</code></th>
+						<td><p>触发此代理的GSBroadcastManager对象</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>investigation</code></th>
+						<td><p>截止了的问卷调查对象</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>问卷调查截止</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/GSBroadcastManager.html">GSBroadcastManager</a></p></code></li>
+					
+					<li><code><p><a href="../Classes/GSInvestigation.html">GSInvestigation</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSBroadcastInvestigationDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/broadcastManager:didPostInvestigationURL:" title="broadcastManager:didPostInvestigationURL:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/broadcastManager:didPostInvestigationURL:">&ndash;&nbsp;broadcastManager:didPostInvestigationURL:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>发送问卷调查链接</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)broadcastManager:(GSBroadcastManager *)<em>broadcastManager</em> didPostInvestigationURL:(NSString *)<em>investigationURL</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>broadcastManager</code></th>
+						<td><p>触发此代理的GSBroadcastManager对象</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>investigationURL</code></th>
+						<td><p>问卷调查链接地址</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>发送问卷调查链接</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/GSBroadcastManager.html">GSBroadcastManager</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSBroadcastInvestigationDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/broadcastManager:didOnCardPublish:type:" title="broadcastManager:didOnCardPublish:type:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/broadcastManager:didOnCardPublish:type:">&ndash;&nbsp;broadcastManager:didOnCardPublish:type:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>发布答题卡</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)broadcastManager:(GSBroadcastManager *)<em>broadcastManager</em> didOnCardPublish:(NSDictionary *)<em>options</em> type:(GSCardQuestionType)<em>questionType</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>broadcastManager</code></th>
+						<td><p>触发此代理的GSBroadcastManager对象</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>options</code></th>
+						<td><p>答题卡选项</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>type</code></th>
+						<td><p>答题卡类型，单选，多选</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>发布答题卡</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/GSBroadcastManager.html">GSBroadcastManager</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSBroadcastInvestigationDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/broadcastManager:didOnCardResultPublish:type:totalSubmitted:" title="broadcastManager:didOnCardResultPublish:type:totalSubmitted:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/broadcastManager:didOnCardResultPublish:type:totalSubmitted:">&ndash;&nbsp;broadcastManager:didOnCardResultPublish:type:totalSubmitted:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>答题卡结果发布</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)broadcastManager:(GSBroadcastManager *)<em>broadcastManager</em> didOnCardResultPublish:(NSMutableArray *)<em>options</em> type:(GSCardQuestionType)<em>questionType</em> totalSubmitted:(int)<em>totalSubmitted</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>broadcastManager</code></th>
+						<td><p>触发此代理的GSBroadcastManager对象</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>options</code></th>
+						<td><p>所有选项,包括选择此选项的人数,此选项是否为正确答案</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>totalSubmitted</code></th>
+						<td><p>总的提交人数</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>type</code></th>
+						<td><p>答题卡类型，单选，多选</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>答题卡结果发布</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/GSBroadcastManager.html">GSBroadcastManager</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSBroadcastInvestigationDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/broadcastManager:didOnCardSubmit:userId:" title="broadcastManager:didOnCardSubmit:userId:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/broadcastManager:didOnCardSubmit:userId:">&ndash;&nbsp;broadcastManager:didOnCardSubmit:userId:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>答题卡提交</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)broadcastManager:(GSBroadcastManager *)<em>broadcastManager</em> didOnCardSubmit:(NSArray *)<em>itemIds</em> userId:(long long)<em>userId</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>broadcastManager</code></th>
+						<td><p>触发此代理的GSBroadcastManager对象</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>itemIds</code></th>
+						<td><p>数组</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userId</code></th>
+						<td><p>用户id</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>答题卡提交</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/GSBroadcastManager.html">GSBroadcastManager</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSBroadcastInvestigationDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/broadcastManager_didOnCardEnd:" title="broadcastManager_didOnCardEnd:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/broadcastManager_didOnCardEnd:">&ndash;&nbsp;broadcastManager_didOnCardEnd:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<ul>
+<li>答题卡结束
+*</li>
+<li>@param broadcastManager 触发此代理的GSBroadcastManager对象</li>
+</ul>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)broadcastManager_didOnCardEnd:(GSBroadcastManager *)<em>broadcastManager</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<ul>
+<li>答题卡结束
+*</li>
+<li><p>@param broadcastManager 触发此代理的GSBroadcastManager对象</p></li>
+<li><p>@see  <a href="../Classes/GSBroadcastManager.html">GSBroadcastManager</a></p></li>
+</ul>
+
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSBroadcastInvestigationDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2017 Gensee. All rights reserved. Updated: 2017-02-22</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

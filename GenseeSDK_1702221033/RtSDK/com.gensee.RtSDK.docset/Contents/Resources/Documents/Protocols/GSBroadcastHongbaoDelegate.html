@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>GSBroadcastHongbaoDelegate Protocol Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">RtSDK </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Gensee</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/broadcastManager:onHongbaoComingNotify:">- broadcastManager:onHongbaoComingNotify:</option>
+		
+		<option value="//api/name/broadcastManager:onHongbaoCreate:strId:">- broadcastManager:onHongbaoCreate:strId:</option>
+		
+		<option value="//api/name/broadcastManager:onHongbaoGrabHongbao:strId:money:">- broadcastManager:onHongbaoGrabHongbao:strId:money:</option>
+		
+		<option value="//api/name/broadcastManager:onHongbaoGrabbedNotify:grabInfo:type:">- broadcastManager:onHongbaoGrabbedNotify:grabInfo:type:</option>
+		
+		<option value="//api/name/broadcastManager:onHongbaoQueryBalance:ok:">- broadcastManager:onHongbaoQueryBalance:ok:</option>
+		
+		<option value="//api/name/broadcastManager:onHongbaoQueryHongbaoGrabList:strId:">- broadcastManager:onHongbaoQueryHongbaoGrabList:strId:</option>
+		
+		<option value="//api/name/broadcastManager:onHongbaoQueryHongbaoList:">- broadcastManager:onHongbaoQueryHongbaoList:</option>
+		
+		<option value="//api/name/broadcastManager:onHongbaoQuerySelfGrabList:">- broadcastManager:onHongbaoQuerySelfGrabList:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">GSBroadcastHongbaoDelegate Protocol Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Conforms to</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>GSBroadcastHongbaoDelegate.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>红包代理，接受直播中红包的回调</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/broadcastManager:onHongbaoCreate:strId:" title="broadcastManager:onHongbaoCreate:strId:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/broadcastManager:onHongbaoCreate:strId:">&ndash;&nbsp;broadcastManager:onHongbaoCreate:strId:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>创建红包结果回调</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)broadcastManager:(GSBroadcastManager *)<em>broadcastManager</em> onHongbaoCreate:(GSHongbaoCreateResult)<em>result</em> strId:(NSString *)<em>strid</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>broadcastManager</code></th>
+						<td><p>触发此代理的GSBroadcastManager对象</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>result</code></th>
+						<td><p>创建结果</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>strid</code></th>
+						<td><p>红包ID</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>创建红包结果回调</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSBroadcastHongbaoDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/broadcastManager:onHongbaoGrabHongbao:strId:money:" title="broadcastManager:onHongbaoGrabHongbao:strId:money:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/broadcastManager:onHongbaoGrabHongbao:strId:money:">&ndash;&nbsp;broadcastManager:onHongbaoGrabHongbao:strId:money:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>抢红包结果回调</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)broadcastManager:(GSBroadcastManager *)<em>broadcastManager</em> onHongbaoGrabHongbao:(GSHongbaoGrabResult)<em>result</em> strId:(NSString *)<em>strid</em> money:(unsigned)<em>money</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>broadcastManager</code></th>
+						<td><p>触发此代理的GSBroadcastManager对象</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>result</code></th>
+						<td><p>抢红包结果</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>strid</code></th>
+						<td><p>红包ID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>money</code></th>
+						<td><p>抢到的金额</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>抢红包结果回调</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSBroadcastHongbaoDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/broadcastManager:onHongbaoQueryHongbaoList:" title="broadcastManager:onHongbaoQueryHongbaoList:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/broadcastManager:onHongbaoQueryHongbaoList:">&ndash;&nbsp;broadcastManager:onHongbaoQueryHongbaoList:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>查询会议里所有的红包列表</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)broadcastManager:(GSBroadcastManager *)<em>broadcastManager</em> onHongbaoQueryHongbaoList:(NSArray *)<em>hongbaoArray</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>broadcastManager</code></th>
+						<td><p>触发此代理的GSBroadcastManager对象</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>hongbaoArray</code></th>
+						<td><p>红包列表</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>查询会议里所有的红包列表</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSBroadcastHongbaoDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/broadcastManager:onHongbaoQueryHongbaoGrabList:strId:" title="broadcastManager:onHongbaoQueryHongbaoGrabList:strId:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/broadcastManager:onHongbaoQueryHongbaoGrabList:strId:">&ndash;&nbsp;broadcastManager:onHongbaoQueryHongbaoGrabList:strId:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>查询抢了这个红包的所有人</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)broadcastManager:(GSBroadcastManager *)<em>broadcastManager</em> onHongbaoQueryHongbaoGrabList:(NSArray *)<em>grabs</em> strId:(NSString *)<em>strid</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>broadcastManager</code></th>
+						<td><p>触发此代理的GSBroadcastManager对象</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>grabs</code></th>
+						<td><p>抢了这个红包的所有人的信息</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>strid</code></th>
+						<td><p>红包ID</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>查询抢了这个红包的所有人</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSBroadcastHongbaoDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/broadcastManager:onHongbaoQuerySelfGrabList:" title="broadcastManager:onHongbaoQuerySelfGrabList:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/broadcastManager:onHongbaoQuerySelfGrabList:">&ndash;&nbsp;broadcastManager:onHongbaoQuerySelfGrabList:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>查询自己抢的所有红包</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)broadcastManager:(GSBroadcastManager *)<em>broadcastManager</em> onHongbaoQuerySelfGrabList:(NSArray *)<em>grabs</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>broadcastManager</code></th>
+						<td><p>触发此代理的GSBroadcastManager对象</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>grabs</code></th>
+						<td><p>自己抢的红包列表</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>查询自己抢的所有红包</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSBroadcastHongbaoDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/broadcastManager:onHongbaoQueryBalance:ok:" title="broadcastManager:onHongbaoQueryBalance:ok:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/broadcastManager:onHongbaoQueryBalance:ok:">&ndash;&nbsp;broadcastManager:onHongbaoQueryBalance:ok:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>查询余额</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)broadcastManager:(GSBroadcastManager *)<em>broadcastManager</em> onHongbaoQueryBalance:(unsigned)<em>balance</em> ok:(BOOL)<em>ok</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>broadcastManager</code></th>
+						<td><p>触发此代理的GSBroadcastManager对象</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>balance</code></th>
+						<td><p>余额
+@param ok</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>查询余额</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSBroadcastHongbaoDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/broadcastManager:onHongbaoComingNotify:" title="broadcastManager:onHongbaoComingNotify:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/broadcastManager:onHongbaoComingNotify:">&ndash;&nbsp;broadcastManager:onHongbaoComingNotify:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>出现红包回调</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)broadcastManager:(GSBroadcastManager *)<em>broadcastManager</em> onHongbaoComingNotify:(GSHongbaoInfo *)<em>hongbaoInfo</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>broadcastManager</code></th>
+						<td><p>触发此代理的GSBroadcastManager对象</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>hongbaoInfo</code></th>
+						<td><p>红包信息</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>出现红包回调</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSBroadcastHongbaoDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/broadcastManager:onHongbaoGrabbedNotify:grabInfo:type:" title="broadcastManager:onHongbaoGrabbedNotify:grabInfo:type:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/broadcastManager:onHongbaoGrabbedNotify:grabInfo:type:">&ndash;&nbsp;broadcastManager:onHongbaoGrabbedNotify:grabInfo:type:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>红包被抢回调</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)broadcastManager:(GSBroadcastManager *)<em>broadcastManager</em> onHongbaoGrabbedNotify:(NSString *)<em>strid</em> grabInfo:(GSGrabInfo *)<em>grabInfo</em> type:(int)<em>hongbaoType</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>broadcastManager</code></th>
+						<td><p>触发此代理的GSBroadcastManager对象</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>strid</code></th>
+						<td><p>红包ID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>grabInfo</code></th>
+						<td><p>抢红包信息</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>hongbaoType</code></th>
+						<td><p>红包类型：//0:随机红包，1：固定红包，2：定向红包</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>红包被抢回调</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">GSBroadcastHongbaoDelegate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2017 Gensee. All rights reserved. Updated: 2017-02-22</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>
